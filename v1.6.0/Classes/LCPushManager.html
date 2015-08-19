@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>LCPushManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">LeapCloud </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Leap App Services</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/enablePushTypes:">+ enablePushTypes:</option>
+		
+		<option value="//api/name/enablePushWithSettings:">+ enablePushWithSettings:</option>
+		
+		<option value="//api/name/getSubscribedChannelsInBackgroundWithBlock:">+ getSubscribedChannelsInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/handlePush:">+ handlePush:</option>
+		
+		<option value="//api/name/sendPushInBackground:block:">+ sendPushInBackground:block:</option>
+		
+		<option value="//api/name/sendPushMessageInBackground:toChannel:block:">+ sendPushMessageInBackground:toChannel:block:</option>
+		
+		<option value="//api/name/sendPushMessageInBackground:toQuery:block:">+ sendPushMessageInBackground:toQuery:block:</option>
+		
+		<option value="//api/name/subscribeToChannelInBackground:block:">+ subscribeToChannelInBackground:block:</option>
+		
+		<option value="//api/name/unsubscribeFromChannelInBackground:block:">+ unsubscribeFromChannelInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LCPushManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>LCPushManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enablePushTypes:" title="enablePushTypes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enablePushTypes:">+&nbsp;enablePushTypes:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register to receive push notifications of the specified types via Apple Push Service.
+<a href="../Classes/LeapCloud.html">LeapCloud</a> SDK handles <code>application:didRegisterForRemoteNotificationsWithDeviceToken:</code> and saves the device token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enablePushTypes:(UIRemoteNotificationType)<em>types</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>types</code></th>
+						<td><p>A bit mask specifying the types of notifications the app accepts. For a list of values, see <code>UIRemoteNotificationType</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enablePushWithSettings:" title="enablePushWithSettings:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enablePushWithSettings:">+&nbsp;enablePushWithSettings:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register to receive push notifications of the specified types via Apple Push Service and registers your preferred options for notifying the user at the same time.
+<a href="../Classes/LeapCloud.html">LeapCloud</a> SDK handles <code>application:didRegisterForRemoteNotificationsWithDeviceToken:</code> and saves the device token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enablePushWithSettings:(UIUserNotificationSettings *)<em>notificationSettings</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>notificationSettings</code></th>
+						<td><p>The types of notifications that your app wants to use. You also use this object to specify custom actions that can be initiated by the user from an alert displayed in response to a local or remote notification.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Sending Push Notifications" name="task_Sending Push Notifications"></a>
+						<h2 class="task-title">Sending Push Notifications</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendPushMessageInBackground:toChannel:block:" title="sendPushMessageInBackground:toChannel:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendPushMessageInBackground:toChannel:block:">+&nbsp;sendPushMessageInBackground:toChannel:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> sends a push message to a channel and calls the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendPushMessageInBackground:(NSString *)<em>message</em> toChannel:(NSString *)<em>channel</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to send.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channel</code></th>
+						<td><p>The channel to send to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendPushMessageInBackground:toQuery:block:" title="sendPushMessageInBackground:toQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendPushMessageInBackground:toQuery:block:">+&nbsp;sendPushMessageInBackground:toQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> sends a push message to a query and calls the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendPushMessageInBackground:(NSString *)<em>message</em> toQuery:(LCQuery *)<em>query</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>The message to send.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>The query to send to. The query must be a LCInstallation query
+created with <a href="../Classes/LCInstallation.html#//api/name/query">[LCInstallation query]</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendPushInBackground:block:" title="sendPushInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendPushInBackground:block:">+&nbsp;sendPushInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> send this push message and executes the given callback block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)sendPushInBackground:(LCPush *)<em>push</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>push</code></th>
+						<td><p>The <a href="../Classes/LCPush.html"><code>LCPush</code></a> object with push message to send.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Handling Notifications" name="task_Handling Notifications"></a>
+						<h2 class="task-title">Handling Notifications</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/handlePush:" title="handlePush:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handlePush:">+&nbsp;handlePush:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A default handler for push notifications while the app is active that
+could be used to mimic the behavior of iOS push notifications while the app is backgrounded or not running.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)handlePush:(NSDictionary *)<em>userInfo</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userInfo</code></th>
+						<td><p>The dictionary from either <code>didFinishLaunchingWithOptions:</code> or <code>appplication:didReceiveRemoteNotification:</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this from <code>application:didFinishLaunchingWithOptions:</code> and <code>application:didReceiveRemoteNotification:</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Managing Channel Subscriptions" name="task_Managing Channel Subscriptions"></a>
+						<h2 class="task-title">Managing Channel Subscriptions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSubscribedChannelsInBackgroundWithBlock:" title="getSubscribedChannelsInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSubscribedChannelsInBackgroundWithBlock:">+&nbsp;getSubscribedChannelsInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> get all the channels that this device is subscribed to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getSubscribedChannelsInBackgroundWithBlock:(LCSetResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(NSSet *channels, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subscribeToChannelInBackground:block:" title="subscribeToChannelInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subscribeToChannelInBackground:block:">+&nbsp;subscribeToChannelInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> subscribes the device to a channel of push notifications and calls the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)subscribeToChannelInBackground:(NSString *)<em>channel</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channel</code></th>
+						<td><p>The channel to subscribe to. The channel name must start with
+a letter and contain only letters, numbers, dashes, and underscores.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unsubscribeFromChannelInBackground:block:" title="unsubscribeFromChannelInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unsubscribeFromChannelInBackground:block:">+&nbsp;unsubscribeFromChannelInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> unsubscribes the device from a channel of push notifications and calls the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unsubscribeFromChannelInBackground:(NSString *)<em>channel</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>channel</code></th>
+						<td><p>The channel to unsubscribe from.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPushManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Leap App Services. All rights reserved. Updated: 2015-08-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

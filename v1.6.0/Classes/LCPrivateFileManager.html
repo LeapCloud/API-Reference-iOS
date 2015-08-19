@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>LCPrivateFileManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">LeapCloud </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Leap App Services</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/copyAllInBackground:toPaths:block:">+ copyAllInBackground:toPaths:block:</option>
+		
+		<option value="//api/name/copyFileInBackground:toPath:block:">+ copyFileInBackground:toPath:block:</option>
+		
+		<option value="//api/name/createFolderInBackground:block:">+ createFolderInBackground:block:</option>
+		
+		<option value="//api/name/decryptData:error:">+ decryptData:error:</option>
+		
+		<option value="//api/name/defaultLocalPathForFileAtRemotePath:">+ defaultLocalPathForFileAtRemotePath:</option>
+		
+		<option value="//api/name/deleteAllInBackground:block:">+ deleteAllInBackground:block:</option>
+		
+		<option value="//api/name/deleteFileInBackground:block:">+ deleteFileInBackground:block:</option>
+		
+		<option value="//api/name/downloadContentsOfFile:block:">+ downloadContentsOfFile:block:</option>
+		
+		<option value="//api/name/downloadContentsOfFile:block:progressBlock:">+ downloadContentsOfFile:block:progressBlock:</option>
+		
+		<option value="//api/name/downloadContentsOfFile:toDirectory:block:">+ downloadContentsOfFile:toDirectory:block:</option>
+		
+		<option value="//api/name/downloadContentsOfFile:toDirectory:block:progressBlock:">+ downloadContentsOfFile:toDirectory:block:progressBlock:</option>
+		
+		<option value="//api/name/downloadFileAtRemotePath:toLocalPath:block:">+ downloadFileAtRemotePath:toLocalPath:block:</option>
+		
+		<option value="//api/name/downloadFileAtRemotePath:toLocalPath:block:progressBlock:">+ downloadFileAtRemotePath:toLocalPath:block:progressBlock:</option>
+		
+		<option value="//api/name/enableAutoEncryption">+ enableAutoEncryption</option>
+		
+		<option value="//api/name/encryptData:error:">+ encryptData:error:</option>
+		
+		<option value="//api/name/getMetaDataInBackground:shouldGetContents:block:">+ getMetaDataInBackground:shouldGetContents:block:</option>
+		
+		<option value="//api/name/getMetaDataInBackground:skip:limit:block:">+ getMetaDataInBackground:skip:limit:block:</option>
+		
+		<option value="//api/name/getUsage:">+ getUsage:</option>
+		
+		<option value="//api/name/moveAllInBackground:toPaths:block:">+ moveAllInBackground:toPaths:block:</option>
+		
+		<option value="//api/name/moveFileInBackground:toPath:block:">+ moveFileInBackground:toPath:block:</option>
+		
+		<option value="//api/name/saveFileInBackground:overwrite:block:">+ saveFileInBackground:overwrite:block:</option>
+		
+		<option value="//api/name/saveFileInBackground:overwrite:block:progressBlock:">+ saveFileInBackground:overwrite:block:progressBlock:</option>
+		
+		<option value="//api/name/shareFileInBackground:block:">+ shareFileInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LCPrivateFileManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>LCPrivateFileManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class used to upload, download, get file list, get file metadata, etc.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableAutoEncryption" title="enableAutoEncryption"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAutoEncryption">+&nbsp;enableAutoEncryption</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enable automatically file encryption during uploading and decryption during downloading. If enabled, the whole file will be encrypted with <code>AES256/ECB/PKCS7Padding</code> before uploading.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableAutoEncryption</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Upload Private Files to LeapCloud" name="task_Upload Private Files to LeapCloud"></a>
+						<h2 class="task-title">Upload Private Files to LeapCloud</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveFileInBackground:overwrite:block:" title="saveFileInBackground:overwrite:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveFileInBackground:overwrite:block:">+&nbsp;saveFileInBackground:overwrite:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.localPath to <a href="../Classes/LeapCloud.html">LeapCloud</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)saveFileInBackground:(LCPrivateFile *)<em>file</em> overwrite:(BOOL)<em>shouldOverwrite</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to save, if file remote path is nil, this operation will failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shouldOverwrite</code></th>
+						<td><p>Overwrite the file at remotePath or not.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> <br>
+1. The file will be encrypted using AES256. <br>
+2. If the file&rsquo;s fileHash is not set, the md5 of file will be calculated and used.<br>
+3. Metadata of saved file will be set on the &lsquo;file&rsquo; object.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveFileInBackground:overwrite:block:progressBlock:" title="saveFileInBackground:overwrite:block:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveFileInBackground:overwrite:block:progressBlock:">+&nbsp;saveFileInBackground:overwrite:block:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.localPath to <a href="../Classes/LeapCloud.html">LeapCloud</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)saveFileInBackground:(LCPrivateFile *)<em>file</em> overwrite:(BOOL)<em>shouldOverwrite</em> block:(LCBooleanResultBlock)<em>block</em> progressBlock:(LCProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to save, if file remote path is nil, this operation will failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shouldOverwrite</code></th>
+						<td><p>Overwrite the file at remotePath or not.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="note"><p><strong>Note:</strong> <br>
+1. The file will be encrypted using AES256. <br>
+2. If the file&rsquo;s fileHash is not set, the md5 of file will be calculated and used.<br>
+3. Metadata of saved file will be set on the &lsquo;file&rsquo; object.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Download Private Files" name="task_Download Private Files"></a>
+						<h2 class="task-title">Download Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/defaultLocalPathForFileAtRemotePath:" title="defaultLocalPathForFileAtRemotePath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultLocalPathForFileAtRemotePath:">+&nbsp;defaultLocalPathForFileAtRemotePath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the default path for downloading the file on <a href="../Classes/LeapCloud.html">LeapCloud</a> file servers which located at the remotePath.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)defaultLocalPathForFileAtRemotePath:(NSString *)<em>remotePath</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePath</code></th>
+						<td><p>The remote path.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>default local path</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadContentsOfFile:block:" title="downloadContentsOfFile:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadContentsOfFile:block:">+&nbsp;downloadContentsOfFile:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download the file to default path. After the downloading complete, the block excuted with the local file path or an error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadContentsOfFile:(LCPrivateFile *)<em>file</em> block:(LCStringResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to download, file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadContentsOfFile:block:progressBlock:" title="downloadContentsOfFile:block:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadContentsOfFile:block:progressBlock:">+&nbsp;downloadContentsOfFile:block:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download the file to default path. After the downloading complete, the block excuted with the local file path or an error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadContentsOfFile:(LCPrivateFile *)<em>file</em> block:(LCStringResultBlock)<em>block</em> progressBlock:(LCProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to download, file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadContentsOfFile:toDirectory:block:" title="downloadContentsOfFile:toDirectory:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadContentsOfFile:toDirectory:block:">+&nbsp;downloadContentsOfFile:toDirectory:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download a file to a specifed directory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadContentsOfFile:(LCPrivateFile *)<em>file</em> toDirectory:(NSString *)<em>dirPath</em> block:(LCStringResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to download, file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dirPath</code></th>
+						<td><p>The path of a directory to save downloaded file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>local file path = dirPath + file.remotePath</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadContentsOfFile:toDirectory:block:progressBlock:" title="downloadContentsOfFile:toDirectory:block:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadContentsOfFile:toDirectory:block:progressBlock:">+&nbsp;downloadContentsOfFile:toDirectory:block:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download a file to a specified directory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadContentsOfFile:(LCPrivateFile *)<em>file</em> toDirectory:(NSString *)<em>dirPath</em> block:(LCStringResultBlock)<em>block</em> progressBlock:(LCProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to download, file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dirPath</code></th>
+						<td><p>The path of a directory to save downloaded file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>local file path = dirPath + file.remotePath</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadFileAtRemotePath:toLocalPath:block:" title="downloadFileAtRemotePath:toLocalPath:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadFileAtRemotePath:toLocalPath:block:">+&nbsp;downloadFileAtRemotePath:toLocalPath:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download the file to a specified path.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadFileAtRemotePath:(NSString *)<em>remotePath</em> toLocalPath:(NSString *)<em>localPath</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePath</code></th>
+						<td><p>The remote path of the file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localPath</code></th>
+						<td><p>The local path to save the downloaded file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading complete, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadFileAtRemotePath:toLocalPath:block:progressBlock:" title="downloadFileAtRemotePath:toLocalPath:block:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadFileAtRemotePath:toLocalPath:block:progressBlock:">+&nbsp;downloadFileAtRemotePath:toLocalPath:block:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download the file to a specified path.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)downloadFileAtRemotePath:(NSString *)<em>remotePath</em> toLocalPath:(NSString *)<em>localPath</em> block:(LCBooleanResultBlock)<em>block</em> progressBlock:(LCProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePath</code></th>
+						<td><p>The remote path of the file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localPath</code></th>
+						<td><p>The local path to save the downloaded file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading complete, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Delete Private Files" name="task_Delete Private Files"></a>
+						<h2 class="task-title">Delete Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deleteFileInBackground:block:" title="deleteFileInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteFileInBackground:block:">+&nbsp;deleteFileInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the file at file.remotePath from remote server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deleteFileInBackground:(LCPrivateFile *)<em>file</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file to delete, file&rsquo;s remotePath shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after deleting, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAllInBackground:block:" title="deleteAllInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAllInBackground:block:">+&nbsp;deleteAllInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a collection of files all at once asynchronously and excutes the block when done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deleteAllInBackground:(NSArray *)<em>fileList</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileList</code></th>
+						<td><p>A collection of files to delete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Get Metadata of a Private File" name="task_Get Metadata of a Private File"></a>
+						<h2 class="task-title">Get Metadata of a Private File</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getMetaDataInBackground:shouldGetContents:block:" title="getMetaDataInBackground:shouldGetContents:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMetaDataInBackground:shouldGetContents:block:">+&nbsp;getMetaDataInBackground:shouldGetContents:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the metadata of a file and excutes the block when done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getMetaDataInBackground:(LCPrivateFile *)<em>file</em> shouldGetContents:(BOOL)<em>shouldGetContents</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shouldGetContents</code></th>
+						<td><p>Whether to get the contents of a directory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The metadata will be set on the &lsquo;file&rsquo; object automatically.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMetaDataInBackground:skip:limit:block:" title="getMetaDataInBackground:skip:limit:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMetaDataInBackground:skip:limit:block:">+&nbsp;getMetaDataInBackground:skip:limit:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the metadata of a file and excutes the block when done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getMetaDataInBackground:(LCPrivateFile *)<em>file</em> skip:(int)<em>skip</em> limit:(int)<em>limit</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file&rsquo;s remote path shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>skip</code></th>
+						<td><p>The number of file metadata to skip before returning any.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>A limit on the number of file metadata to return. The default limit is 200, with a maximum of 2000 results being returned at a time.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The metadata will be set on the &lsquo;file&rsquo; object automatically.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Get usage" name="task_Get usage"></a>
+						<h2 class="task-title">Get usage</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getUsage:" title="getUsage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUsage:">+&nbsp;getUsage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the usage of current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getUsage:(LCUsageResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block parameter represents usage of current user. It has 3 parameters. 1. fileCount: How many private files the current user save on <a href="../Classes/LeapCloud.html">LeapCloud</a> file servers. 2. usedCapacity: The capacity current user used in bytes. 3. error: If there is an error, both fileCount and usedCapacity are -1.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Copy Private Files" name="task_Copy Private Files"></a>
+						<h2 class="task-title">Copy Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/copyFileInBackground:toPath:block:" title="copyFileInBackground:toPath:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyFileInBackground:toPath:block:">+&nbsp;copyFileInBackground:toPath:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copys a file to another remote path. After copy, the block will give you the new file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)copyFileInBackground:(LCPrivateFile *)<em>scrFile</em> toPath:(NSString *)<em>dstPath</em> block:(LCPrivateFileResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrFile</code></th>
+						<td><p>The source file to copy, its remote path shouldn&rsquo;t be empty.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPath</code></th>
+						<td><p>The destination remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (<a href="../Classes/LCPrivateFile.html">LCPrivateFile</a> <em>newFile, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will overwrite dstPath.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/copyAllInBackground:toPaths:block:" title="copyAllInBackground:toPaths:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyAllInBackground:toPaths:block:">+&nbsp;copyAllInBackground:toPaths:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copys a collection of private files at <code>scrPaths</code> to remote paths <code>dstPaths</code>. The result will pass in the <code>block</code>.
+The block has three parameters: <code>isAllCompleted</code> indicates whether all files was copied; <code>completed</code> contains an array of path pairs which was copied successfully, its structure: [{&ldquo;from&rdquo;:scrPath, &ldquo;to&rdquo;:dstPath}]; <code>error</code> is nil unless the network request failed or <code>scrPaths</code> does not match with <code>dstPaths</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)copyAllInBackground:(NSArray *)<em>scrPaths</em> toPaths:(NSOrderedSet *)<em>dstPaths</em> block:(void ( ^ ) ( BOOL isAllCompleted , NSArray *completed , NSError *error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrPaths</code></th>
+						<td><p>An array of private file remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPaths</code></th>
+						<td><p>An orderedSet of destination remote path. These paths must match with scrPaths.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL isAllCompleted, NSArray <em>completed, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Move Private Files" name="task_Move Private Files"></a>
+						<h2 class="task-title">Move Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/moveFileInBackground:toPath:block:" title="moveFileInBackground:toPath:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/moveFileInBackground:toPath:block:">+&nbsp;moveFileInBackground:toPath:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Moves a file to another remote path. After moving, the block will give you the new file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)moveFileInBackground:(LCPrivateFile *)<em>scrFile</em> toPath:(NSString *)<em>dstPath</em> block:(LCPrivateFileResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrFile</code></th>
+						<td><p>The source file to move, its remote path shouldn&rsquo;t be empty.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPath</code></th>
+						<td><p>The destination remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (<a href="../Classes/LCPrivateFile.html">LCPrivateFile</a> <em>newFile, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method will overwrite dstPath.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/moveAllInBackground:toPaths:block:" title="moveAllInBackground:toPaths:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/moveAllInBackground:toPaths:block:">+&nbsp;moveAllInBackground:toPaths:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Moves a collection of private files at <code>scrPaths</code> to remote paths <code>dstPaths</code>. The result will pass in the <code>block</code>.
+The block has three parameters: <code>isAllCompleted</code> indicates whether all files was moved; <code>completed</code> contains an array of path pairs which was copied successfully, its structure: [{&ldquo;from&rdquo;:scrPath, &ldquo;to&rdquo;:dstPath}]; <code>error</code> is nil unless the network request failed or <code>scrPaths</code> does not match with <code>dstPaths</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)moveAllInBackground:(NSOrderedSet *)<em>scrPaths</em> toPaths:(NSOrderedSet *)<em>dstPaths</em> block:(void ( ^ ) ( BOOL isAllCompleted , NSArray *completed , NSError *error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrPaths</code></th>
+						<td><p>An array of private file remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPaths</code></th>
+						<td><p>An orderedSet of destination remote path. These paths must match with <code>scrPaths</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL isAllCompleted, NSArray <em>completed, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Create Folder" name="task_Create Folder"></a>
+						<h2 class="task-title">Create Folder</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createFolderInBackground:block:" title="createFolderInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createFolderInBackground:block:">+&nbsp;createFolderInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a folder at remote path file.remotePath.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createFolderInBackground:(LCPrivateFile *)<em>file</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The file representing a directory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Share (Mock)" name="task_Share (Mock)"></a>
+						<h2 class="task-title">Share (Mock)</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shareFileInBackground:block:" title="shareFileInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareFileInBackground:block:">+&nbsp;shareFileInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Share a file or directory. (Mock)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)shareFileInBackground:(LCPrivateFile *)<em>file</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>file</code></th>
+						<td><p>The item to share</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="encrypt/decrpyt data util" name="task_encrypt/decrpyt data util"></a>
+						<h2 class="task-title">encrypt/decrpyt data util</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/encryptData:error:" title="encryptData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptData:error:">+&nbsp;encryptData:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Synchronously</em> encrypt data using current user&rsquo;s masterKey as the password.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)encryptData:(NSData *)<em>data</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The data to be encrypted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in NULL.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The encrypted data, or return nil if an error occured.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decryptData:error:" title="decryptData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decryptData:error:">+&nbsp;decryptData:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Synchronously</em> decrypt data using current user&rsquo;s masterKey as the password.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSData *)decryptData:(NSData *)<em>data</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The data to be decrypted.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>If an error occurs, upon returns contains an NSError object that describes the problem. If you are not interested in possible errors, you may pass in NULL.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The decrypted data, or return nil if an error occured.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCPrivateFileManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Leap App Services. All rights reserved. Updated: 2015-08-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

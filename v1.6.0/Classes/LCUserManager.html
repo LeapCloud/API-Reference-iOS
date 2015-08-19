@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>LCUserManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">LeapCloud </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Leap App Services</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/becomeInBackgroundWithSessionToken:block:">+ becomeInBackgroundWithSessionToken:block:</option>
+		
+		<option value="//api/name/changePasswordWithNewPassword:oldPassword:block:">+ changePasswordWithNewPassword:oldPassword:block:</option>
+		
+		<option value="//api/name/checkPassword:block:">+ checkPassword:block:</option>
+		
+		<option value="//api/name/checkPassword:matchWithUsername:block:">+ checkPassword:matchWithUsername:block:</option>
+		
+		<option value="//api/name/checkUsernameExists:block:">+ checkUsernameExists:block:</option>
+		
+		<option value="//api/name/enableAutomaticUser">+ enableAutomaticUser</option>
+		
+		<option value="//api/name/getUserObjectWithId:block:">+ getUserObjectWithId:block:</option>
+		
+		<option value="//api/name/logInWithUsernameInBackground:password:block:">+ logInWithUsernameInBackground:password:block:</option>
+		
+		<option value="//api/name/logOut">+ logOut</option>
+		
+		<option value="//api/name/requestEmailVerifyForEmailInBackground:block:">+ requestEmailVerifyForEmailInBackground:block:</option>
+		
+		<option value="//api/name/requestPasswordResetForEmailInBackground:block:">+ requestPasswordResetForEmailInBackground:block:</option>
+		
+		<option value="//api/name/signUpInBackground:block:">+ signUpInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LCUserManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>LCUserManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The helper class of <a href="../Classes/LCUser.html">LCUser</a>. This class extends the behaviour of <a href="../Classes/LCObject.html">LCObject</a>, like signing up, login, and validation uniqueness.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/enableAutomaticUser" title="enableAutomaticUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableAutomaticUser">+&nbsp;enableAutomaticUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables automatic creation of anonymous users.  After calling this method, <a href="../Classes/LCUser.html#//api/name/currentUser">[LCUser currentUser]</a> will always have a value. The user will only be created on the server once the user has been saved, or once an object with a relation to that user or an ACL that refers to the user has been saved.<br></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)enableAutomaticUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Note: saveEventually will not work if an item being saved has a relation to an automatic user that has never been saved.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/signUpInBackground:block:" title="signUpInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/signUpInBackground:block:">+&nbsp;signUpInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Signs up the user asynchronously. Make sure that password and username are set. This will also enforce that the username isn&rsquo;t already taken.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)signUpInBackground:(LCUser *)<em>newUser</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newUser</code></th>
+						<td><p>The new user to create.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging in" name="task_Logging in"></a>
+						<h2 class="task-title">Logging in</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logInWithUsernameInBackground:password:block:" title="logInWithUsernameInBackground:password:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithUsernameInBackground:password:block:">+&nbsp;logInWithUsernameInBackground:password:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Makes an asynchronous request to log in a user with specified credentials. Returns an instance of the successfully logged in <a href="../Classes/LCUser.html">LCUser</a>. This will also cache the user locally so that calls to <a href="#//api/name/currentUser">currentUser</a> will use the latest logged in user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInWithUsernameInBackground:(NSString *)<em>username</em> password:(NSString *)<em>password</em> block:(LCUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>The username of the user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password of the user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/LCUser.html">LCUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Becoming a user" name="task_Becoming a user"></a>
+						<h2 class="task-title">Becoming a user</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/becomeInBackgroundWithSessionToken:block:" title="becomeInBackgroundWithSessionToken:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/becomeInBackgroundWithSessionToken:block:">+&nbsp;becomeInBackgroundWithSessionToken:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Makes an asynchronous request to become a user with the given session token. Returns an instance of the successfully logged in <a href="../Classes/LCUser.html">LCUser</a>. This also caches the user locally so that calls to <a href="#//api/name/currentUser">currentUser</a> will use the latest logged in user. The selector for the callback should look like: myCallback:(<a href="../Classes/LCUser.html">LCUser</a> *)user error:(NSError **)error</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)becomeInBackgroundWithSessionToken:(NSString *)<em>sessionToken</em> block:(LCUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sessionToken</code></th>
+						<td><p>The session token for the user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/LCUser.html">LCUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging Out" name="task_Logging Out"></a>
+						<h2 class="task-title">Logging Out</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logOut" title="logOut"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logOut">+&nbsp;logOut</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs out the currently logged in user on disk.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logOut</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="change password" name="task_change password"></a>
+						<h2 class="task-title">change password</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/changePasswordWithNewPassword:oldPassword:block:" title="changePasswordWithNewPassword:oldPassword:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changePasswordWithNewPassword:oldPassword:block:">+&nbsp;changePasswordWithNewPassword:oldPassword:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Verify the current password and then change password with the new password.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)changePasswordWithNewPassword:(NSString *)<em>newPassword</em> oldPassword:(NSString *)<em>oldPassword</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newPassword</code></th>
+						<td><p>a new password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldPassword</code></th>
+						<td><p>the current password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Requesting a Password Reset" name="task_Requesting a Password Reset"></a>
+						<h2 class="task-title">Requesting a Password Reset</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestPasswordResetForEmailInBackground:block:" title="requestPasswordResetForEmailInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestPasswordResetForEmailInBackground:block:">+&nbsp;requestPasswordResetForEmailInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send a password reset request asynchronously for a specified email. If a user account exists with that email, an email will be sent to that address with instructions on how to reset their password.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)requestPasswordResetForEmailInBackground:(NSString *)<em>email</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email of the account to send a reset password request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Requesting a Email Verify" name="task_Requesting a Email Verify"></a>
+						<h2 class="task-title">Requesting a Email Verify</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestEmailVerifyForEmailInBackground:block:" title="requestEmailVerifyForEmailInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestEmailVerifyForEmailInBackground:block:">+&nbsp;requestEmailVerifyForEmailInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send a email verify request asynchronously for a specified email. If a user account exists with that email, an email will be sent to that address with instructions on how to verify their email.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)requestEmailVerifyForEmailInBackground:(NSString *)<em>email</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email of the account to verify.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkPassword:block:" title="checkPassword:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkPassword:block:">+&nbsp;checkPassword:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether the password matches current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)checkPassword:(NSString *)<em>password</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>a password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL isMatch, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkPassword:matchWithUsername:block:" title="checkPassword:matchWithUsername:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkPassword:matchWithUsername:block:">+&nbsp;checkPassword:matchWithUsername:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check whether the password machtes with the <a href="../Classes/LCUser.html">LCUser</a> which&rsquo;s username is &ldquo;username&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)checkPassword:(NSString *)<em>password</em> matchWithUsername:(NSString *)<em>username</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>the password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>the username</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL isMatch, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkUsernameExists:block:" title="checkUsernameExists:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkUsernameExists:block:">+&nbsp;checkUsernameExists:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check the username is exist or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)checkUsernameExists:(NSString *)<em>username</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>The username to check</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL isExist, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Empty username is not exist becuause it&rsquo;s not valid.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting User Objects" name="task_Getting User Objects"></a>
+						<h2 class="task-title">Getting User Objects</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getUserObjectWithId:block:" title="getUserObjectWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUserObjectWithId:block:">+&nbsp;getUserObjectWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a <a href="../Classes/LCUser.html">LCUser</a> with a given class and id and sets an error if necessary.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getUserObjectWithId:(NSString *)<em>userId</em> block:(LCUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The objectId of a user that is being requested.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/LCUser.html">LCUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCUserManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Leap App Services. All rights reserved. Updated: 2015-08-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>LCFacebookUtils Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">LeapCloud </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Leap App Services</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/initializeFacebook">+ initializeFacebook</option>
+		
+		<option value="//api/name/initializeFacebookWithUrlShemeSuffix:">+ initializeFacebookWithUrlShemeSuffix:</option>
+		
+		<option value="//api/name/isLinkedWithUser:">+ isLinkedWithUser:</option>
+		
+		<option value="//api/name/linkUser:facebookId:accessToken:expirationDate:block:">+ linkUser:facebookId:accessToken:expirationDate:block:</option>
+		
+		<option value="//api/name/linkUser:permissions:block:">+ linkUser:permissions:block:</option>
+		
+		<option value="//api/name/logInWithFacebookId:accessToken:expirationDate:block:">+ logInWithFacebookId:accessToken:expirationDate:block:</option>
+		
+		<option value="//api/name/logInWithPermissions:block:">+ logInWithPermissions:block:</option>
+		
+		<option value="//api/name/reauthorizeUser:withPublishPermissions:audience:block:">+ reauthorizeUser:withPublishPermissions:audience:block:</option>
+		
+		<option value="//api/name/session">+ session</option>
+		
+		<option value="//api/name/unlinkUserInBackground:block:">+ unlinkUserInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">LCFacebookUtils Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>LCFacebookUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides utility functions for working with Facebook in a <a href="../Classes/LeapCloud.html">LeapCloud</a> application.<br></p>
+
+<p>This class is currently for iOS only.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Interacting With Facebook" name="task_Interacting With Facebook"></a>
+						<h2 class="task-title">Interacting With Facebook</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session">+&nbsp;session</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the Facebook session for the current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (FBSession *)session</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initializeFacebook" title="initializeFacebook"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeFacebook">+&nbsp;initializeFacebook</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in LeapCloud. You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initializeFacebook</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initializeFacebookWithUrlShemeSuffix:" title="initializeFacebookWithUrlShemeSuffix:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeFacebookWithUrlShemeSuffix:">+&nbsp;initializeFacebookWithUrlShemeSuffix:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the Facebook singleton. You must invoke this in order to use the Facebook functionality in LeapCloud. You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file as described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initializeFacebookWithUrlShemeSuffix:(NSString *)<em>urlSchemeSuffix</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>urlSchemeSuffix</code></th>
+						<td><p>The URL suffix for this application - used when multiple applications with the same Facebook application ID may be on the same device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the user has their account linked to Facebook.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(LCUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to check for a facebook link. The user must be logged in on this device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>True if the user has their account linked to Facebook.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging In &amp; Creating Facebook-Linked Users" name="task_Logging In &amp; Creating Facebook-Linked Users"></a>
+						<h2 class="task-title">Logging In &amp; Creating Facebook-Linked Users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logInWithPermissions:block:" title="logInWithPermissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithPermissions:block:">+&nbsp;logInWithPermissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs in a user using Facebook. This method delegates to the Facebook SDK to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/LCUser.html">LCUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInWithPermissions:(NSArray *)<em>permissions</em> block:(LCUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/LCUser.html">LCUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithFacebookId:accessToken:expirationDate:block:" title="logInWithFacebookId:accessToken:expirationDate:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithFacebookId:accessToken:expirationDate:block:">+&nbsp;logInWithFacebookId:accessToken:expirationDate:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs in a user using Facebook. Allows you to handle user login to Facebook, then provide authentication data to log in (or create, in the case where it is a new user) the <a href="../Classes/LCUser.html">LCUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInWithFacebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> block:(LCUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>facebookId</code></th>
+						<td><p>The id of the Facebook user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>expirationDate</code></th>
+						<td><p>The expiration date for the access token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/LCUser.html">LCUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Linking Users with Facebook" name="task_Linking Users with Facebook"></a>
+						<h2 class="task-title">Linking Users with Facebook</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/linkUser:permissions:block:" title="linkUser:permissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUser:permissions:block:">+&nbsp;linkUser:permissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Links Facebook to an existing <a href="../Classes/LCUser.html">LCUser</a>. This method delegates to the Facebook SDK to authenticate the user, and then automatically links the account to the <a href="../Classes/LCUser.html">LCUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUser:(LCUser *)<em>user</em> permissions:(NSArray *)<em>permissions</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>The permissions required for Facebook log in. This passed to the authorize method on the Facebook instance.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL <em>success, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUser:facebookId:accessToken:expirationDate:block:" title="linkUser:facebookId:accessToken:expirationDate:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUser:facebookId:accessToken:expirationDate:block:">+&nbsp;linkUser:facebookId:accessToken:expirationDate:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Links Facebook to an existing <a href="../Classes/LCUser.html">LCUser</a>. Allows you to handle user login to Facebook, then provide authentication data to link the account to the <a href="../Classes/LCUser.html">LCUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUser:(LCUser *)<em>user</em> facebookId:(NSString *)<em>facebookId</em> accessToken:(NSString *)<em>accessToken</em> expirationDate:(NSDate *)<em>expirationDate</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>facebookId</code></th>
+						<td><p>The id of the Facebook user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>The access token for the user&rsquo;s <a href="#//api/name/session">session</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>expirationDate</code></th>
+						<td><p>The expiration date for the access token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL <em>success, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Unlinking Users from Facebook" name="task_Unlinking Users from Facebook"></a>
+						<h2 class="task-title">Unlinking Users from Facebook</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Makes an asynchronous request to unlink a user from a Facebook account.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(LCUser *)<em>user</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to unlink from Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Obtaining new permissions" name="task_Obtaining new permissions"></a>
+						<h2 class="task-title">Obtaining new permissions</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/reauthorizeUser:withPublishPermissions:audience:block:" title="reauthorizeUser:withPublishPermissions:audience:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reauthorizeUser:withPublishPermissions:audience:block:">+&nbsp;reauthorizeUser:withPublishPermissions:audience:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests new Facebook publish permissions for the given user.  This may prompt the user to reauthorize the application. The user will be saved as part of this operation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)reauthorizeUser:(LCUser *)<em>user</em> withPublishPermissions:(NSArray *)<em>permissions</em> audience:(FBSessionDefaultAudience)<em>audience</em> block:(LCBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to request new permissions for.  The user must be linked to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>The new publishing permissions to request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audience</code></th>
+						<td><p>The default audience for publishing permissions to request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">LCFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Leap App Services. All rights reserved. Updated: 2015-08-19</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
