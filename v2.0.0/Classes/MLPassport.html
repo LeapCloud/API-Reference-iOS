@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLPassport Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/email">email</option>
+		
+		<option value="//api/name/linkedUser">linkedUser</option>
+		
+		<option value="//api/name/password">password</option>
+		
+		<option value="//api/name/sessionToken">sessionToken</option>
+		
+		<option value="//api/name/username">username</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/currentPassport">+ currentPassport</option>
+		
+		<option value="//api/name/leapClassName">+ leapClassName</option>
+		
+		<option value="//api/name/loginWithLoginIdInBackground:password:block:">+ loginWithLoginIdInBackground:password:block:</option>
+		
+		<option value="//api/name/logoutInBackgroundWithBlock:">+ logoutInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/passport">+ passport</option>
+		
+		<option value="//api/name/query">+ query</option>
+		
+		<option value="//api/name/unlinkUserInBackground:block:">+ unlinkUserInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/consumeAppCoin:block:">- consumeAppCoin:block:</option>
+		
+		<option value="//api/name/earnAppCoin:block:">- earnAppCoin:block:</option>
+		
+		<option value="//api/name/getLinkedUserInBackgroundWithBlock:">- getLinkedUserInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/isAuthenticated">- isAuthenticated</option>
+		
+		<option value="//api/name/linkUserInBackground:block:">- linkUserInBackground:block:</option>
+		
+		<option value="//api/name/signUpInBackgroundWithBlock:">- signUpInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/signUpInBackgroundWithCaptcha:block:">- signUpInBackgroundWithCaptcha:block:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLPassport Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/MLObject.html">MLObject</a> : NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/MLSubclassing.html">MLSubclassing</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLPassport.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <a href="../Classes/MaxLeap.html">MaxLeap</a> Framework Passport Object that is a local representation of a <a href="#//api/name/passport">passport</a> persisted to the <a href="../Classes/MaxLeap.html">MaxLeap</a>. This class is a subclass of a <a href="../Classes/MLObject.html">MLObject</a>, and retains the same functionality of a <a href="../Classes/MLObject.html">MLObject</a>, but also extends it with various <a href="#//api/name/passport">passport</a> specific methods, like authentication, signing up, and validation uniqueness.<br></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/leapClassName" title="leapClassName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/leapClassName">+&nbsp;leapClassName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The name of the MLPassport class in the REST API. This is a required <a href="../Protocols/MLSubclassing.html">MLSubclassing</a> method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)leapClassName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionToken" title="sessionToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionToken">&nbsp;&nbsp;sessionToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The session token for the <code>MLPassport</code>. This is set by the server upon successful authentication.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSString *sessionToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Accessing the Current MLPassport" name="task_Accessing the Current MLPassport"></a>
+						<h2 class="task-title">Accessing the Current MLPassport</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/currentPassport" title="currentPassport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentPassport">+&nbsp;currentPassport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the currently logged in <a href="#//api/name/passport">passport</a> from disk and returns an instance of it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MLPassport *)currentPassport</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns a MLPassport that is the currently logged in <a href="#//api/name/passport">passport</a>. If there is none, returns nil.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isAuthenticated" title="isAuthenticated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAuthenticated">&ndash;&nbsp;isAuthenticated</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the <a href="#//api/name/passport">passport</a> is an authenticated object for the device. An authenticated MLPassport is one that is obtained via a signUp or logIn method. An authenticated object is required in order to save (with altered values) or delete it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isAuthenticated</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns whether the <a href="#//api/name/passport">passport</a> is authenticated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Creating a New Passport" name="task_Creating a New Passport"></a>
+						<h2 class="task-title">Creating a New Passport</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/passport" title="passport"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passport">+&nbsp;passport</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new MLPassport object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MLPassport *)passport</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns a new MLPassport object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="method-title"><code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The username for the MLPassport.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *username</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/password" title="password"></a>
+	<h3 class="method-title"><code><a href="#//api/name/password">&nbsp;&nbsp;password</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The password for the MLPassport. This will not be filled in from the server with the password. It is only meant to be set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *password</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/email" title="email"></a>
+	<h3 class="method-title"><code><a href="#//api/name/email">&nbsp;&nbsp;email</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The email for the MLPassport.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *email</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkedUser" title="linkedUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkedUser">&nbsp;&nbsp;linkedUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The linked user of the passport in this app.
+If this value is nil, you can retrieve it by calling [MLPassportManager getLinkedUserOfPassport:block:].</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) MLUser *linkedUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Querying for passports" name="task_Querying for passports"></a>
+						<h2 class="task-title">Querying for passports</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/query" title="query"></a>
+	<h3 class="method-title"><code><a href="#//api/name/query">+&nbsp;query</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a query for MLPassport objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MLQuery *)query</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/signUpInBackgroundWithBlock:" title="signUpInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/signUpInBackgroundWithBlock:">&ndash;&nbsp;signUpInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Signs up the <a href="#//api/name/passport">passport</a> asynchronously. Make sure that <a href="#//api/name/password">password</a>, <a href="#//api/name/username">username</a> and <a href="#//api/name/email">email</a> are set. This will also enforce that the <a href="#//api/name/username">username</a> and <a href="#//api/name/email">email</a> isn&rsquo;t already taken.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)signUpInBackgroundWithBlock:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/signUpInBackgroundWithCaptcha:block:" title="signUpInBackgroundWithCaptcha:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/signUpInBackgroundWithCaptcha:block:">&ndash;&nbsp;signUpInBackgroundWithCaptcha:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Signs up the <a href="#//api/name/passport">passport</a> asynchronously. Make sure that <a href="#//api/name/password">password</a>, <a href="#//api/name/username">username</a> and <a href="#//api/name/email">email</a> are set. The capthca also cannot be nil. This will also enforce that the <a href="#//api/name/username">username</a> and <a href="#//api/name/email">email</a> isn&rsquo;t already taken.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)signUpInBackgroundWithCaptcha:(NSDictionary *)<em>captcha</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>captcha</code></th>
+						<td><p>The captcha</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging in" name="task_Logging in"></a>
+						<h2 class="task-title">Logging in</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/loginWithLoginIdInBackground:password:block:" title="loginWithLoginIdInBackground:password:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginWithLoginIdInBackground:password:block:">+&nbsp;loginWithLoginIdInBackground:password:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Makes an asynchronous request to log in a <a href="#//api/name/passport">passport</a> with specified credentials. Returns an instance of the successfully logged in MLPassport. This will also cache the <a href="#//api/name/passport">passport</a> locally so that calls to <a href="#//api/name/currentPassport">currentPassport</a> will use the latest logged in <a href="#//api/name/passport">passport</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loginWithLoginIdInBackground:(NSString *)<em>loginId</em> password:(NSString *)<em>password</em> block:(MLPassportResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginId</code></th>
+						<td><p>The <a href="#//api/name/username">username</a> or <a href="#//api/name/email">email</a> of the <a href="#//api/name/passport">passport</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The <a href="#//api/name/password">password</a> of the <a href="#//api/name/passport">passport</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (MLPassport <em><a href="#//api/name/passport">passport</a>, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logoutInBackgroundWithBlock:" title="logoutInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logoutInBackgroundWithBlock:">+&nbsp;logoutInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs out the currently logged in <a href="#//api/name/passport">passport</a> from server. If success, the cache of the <a href="#//api/name/passport">passport</a> on disk will be removed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logoutInBackgroundWithBlock:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Linking User" name="task_Linking User"></a>
+						<h2 class="task-title">Linking User</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/linkUserInBackground:block:" title="linkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:block:">&ndash;&nbsp;linkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Links an authenticated user with a <a href="#//api/name/passport">passport</a> asynchronously. Make sure that the user is authenticated and the passport&rsquo;s <a href="#//api/name/passport">passport</a> and loginId (<a href="#//api/name/username">username</a> or <a href="#//api/name/email">email</a>) are set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)linkUserInBackground:(MLUser *)<em>user</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>An authenticated user.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLinkedUserInBackgroundWithBlock:" title="getLinkedUserInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLinkedUserInBackgroundWithBlock:">&ndash;&nbsp;getLinkedUserInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get linked user of the <a href="#//api/name/passport">passport</a> asynchronously. Make sure that the <a href="#//api/name/passport">passport</a> is authenticated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLinkedUserInBackgroundWithBlock:(MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following signature: (<a href="../Classes/MLUser.html">MLUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlinks a user with <a href="#//api/name/passport">passport</a> asynchronously. Make sure that the user is authenticated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(MLUser *)<em>user</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>The user to unlink.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Coins" name="task_Coins"></a>
+						<h2 class="task-title">Coins</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/earnAppCoin:block:" title="earnAppCoin:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/earnAppCoin:block:">&ndash;&nbsp;earnAppCoin:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Increase coins in current app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)earnAppCoin:(NSUInteger)<em>coins</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>coins</code></th>
+						<td><p>The number of coins to increase</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when request completed. The block should have the following signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/consumeAppCoin:block:" title="consumeAppCoin:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/consumeAppCoin:block:">&ndash;&nbsp;consumeAppCoin:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Consume coins in current app.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)consumeAppCoin:(NSUInteger)<em>coins</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>coins</code></th>
+						<td><p>The number of coins to consume.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when request completed. The block should have the following signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPassport.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-10-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

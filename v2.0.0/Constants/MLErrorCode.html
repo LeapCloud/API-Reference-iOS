@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLErrorCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLErrorCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>MLConstants.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">MLErrorCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p><code>MLErrorCode</code> enum contains all custom error codes that are used as <code>code</code> for <code>NSError</code> for callbacks on all classes.</p>
+
+<p>These codes are used when <code>domain</code> of <code>NSError</code> that you receive is set to <code>MLErrorDomain</code>.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, MLErrorCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInternalServer</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorConnectionFailed</a> = 100,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorObjectNotFound</a> = 101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidQuery</a> = 102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidClassName</a> = 103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorMissingObjectId</a> = 104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidKeyName</a> = 105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidType</a> = 106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidJSON</a> = 107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorCommandUnavailable</a> = 108,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorCommandNotInitialized</a> = 109,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidUpdate</a> = 110,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorIncorrectType</a> = 111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidChannelName</a> = 112,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorBindToClassNotFound</a> = 113,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorPushMisconfigured</a> = 115,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorObjectTooLarge</a> = 116,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidParameter</a> = 117,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidObjectId</a> = 118,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorOperationForbidden</a> = 119,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorCacheMiss</a> = 120,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidNestedKey</a> = 121,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidFileName</a> = 122,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidACL</a> = 123,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorTimeout</a> = 124,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidEmailAddress</a> = 125,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorRoleNotChangeName</a> = 136,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorDuplicateValue</a> = 137,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidRoleName</a> = 139,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorExceededQuota</a> = 140,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLScriptError</a> = 141,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorRoleNotFound</a> = 142,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorCloudCodeNotDeployed</a> = 143,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidToken</a> = 160,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUsernameMissing</a> = 200,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserPasswordMissing</a> = 201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUsernameTaken</a> = 202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserEmailTaken</a> = 203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserEmailMissing</a> = 204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserWithEmailNotFound</a> = 205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserCannotBeAlteredWithoutSession</a> = 206,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserCanOnlyBeCreatedThroughSignUp</a> = 207,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorAccountAlreadyLinked</a> = 208,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorPasswordMisMatch</a> = 210,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUserNotFound</a> = 211,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorLinkedIdMissing</a> = 250,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidLinkedSession</a> = 251,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUnsupportedSevice</a> = 252,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidAuthData</a> = 253,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorInvalidCaptcha</a> = 301,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUnauthorized</a> = 401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorRateLimit</a> = 503,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorPathTaken</a> = 600,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorPathNotExist</a> = 601,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUnexpected</a> = 602,<br>
+                            
+                            &nbsp;&nbsp; <a href="">kMLErrorUnkown</a> = 90000,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="kMLErrorInternalServer"></a><code>kMLErrorInternalServer</code></dt>
+<dd>
+
+
+<p>1: Internal server error. No information available.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorConnectionFailed"></a><code>kMLErrorConnectionFailed</code></dt>
+<dd>
+
+
+<p>100: The connection to the <a href="../Classes/MaxLeap.html">MaxLeap</a> servers failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorObjectNotFound"></a><code>kMLErrorObjectNotFound</code></dt>
+<dd>
+
+
+<p>101: Object doesn&rsquo;t exist, or has an incorrect password.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidQuery"></a><code>kMLErrorInvalidQuery</code></dt>
+<dd>
+
+
+<p>102: You tried to find values matching a datatype that doesn&rsquo;t support exact database matching, like an array or a dictionary.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidClassName"></a><code>kMLErrorInvalidClassName</code></dt>
+<dd>
+
+
+<p>103: Missing or invalid classname. Classnames are case-sensitive. They must start with a letter, and a-zA-Z0-9_ are the only valid characters.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorMissingObjectId"></a><code>kMLErrorMissingObjectId</code></dt>
+<dd>
+
+
+<p>104: Missing ObjectId, usually the objectId no introduction in the query time, or objectId is illegal. ObjectId string can only letters, numbers.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidKeyName"></a><code>kMLErrorInvalidKeyName</code></dt>
+<dd>
+
+
+<p>105: Key is reserved. objectId, createdAt, updatedAt.<br> Invalid key name. Keys are case-sensitive. They must start with a letter, and a-zA-Z0-9_ are the only valid characters.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidType"></a><code>kMLErrorInvalidType</code></dt>
+<dd>
+
+
+<p>106: Invalid format. Date, Pointer, Relation….</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidJSON"></a><code>kMLErrorInvalidJSON</code></dt>
+<dd>
+
+
+<p>107: Malformed json object. A json dictionary is expected.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorCommandUnavailable"></a><code>kMLErrorCommandUnavailable</code></dt>
+<dd>
+
+
+<p>108: Tried to access a feature only available internally.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorCommandNotInitialized"></a><code>kMLErrorCommandNotInitialized</code></dt>
+<dd>
+
+
+<p>109: <a href="../Classes/MaxLeap.html#//api/name/setApplicationId:clientKey:">[MaxLeap setApplicationId:clientKey:]</a> must be called before using the library.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidUpdate"></a><code>kMLErrorInvalidUpdate</code></dt>
+<dd>
+
+
+<p>110: Update syntax error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorIncorrectType"></a><code>kMLErrorIncorrectType</code></dt>
+<dd>
+
+
+<p>111: Field set to incorrect type.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidChannelName"></a><code>kMLErrorInvalidChannelName</code></dt>
+<dd>
+
+
+<p>112: Invalid channel name. A channel name is either an empty string (the broadcast channel) or contains only a-zA-Z0-9_ characters and starts with a letter.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorBindToClassNotFound"></a><code>kMLErrorBindToClassNotFound</code></dt>
+<dd>
+
+
+<p>113: BindTo class not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorPushMisconfigured"></a><code>kMLErrorPushMisconfigured</code></dt>
+<dd>
+
+
+<p>115: Push is misconfigured. See details to find out how.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorObjectTooLarge"></a><code>kMLErrorObjectTooLarge</code></dt>
+<dd>
+
+
+<p>116: The object is too large.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidParameter"></a><code>kMLErrorInvalidParameter</code></dt>
+<dd>
+
+
+<p>117: The parameters is invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidObjectId"></a><code>kMLErrorInvalidObjectId</code></dt>
+<dd>
+
+
+<p>118: ObjectId is invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorOperationForbidden"></a><code>kMLErrorOperationForbidden</code></dt>
+<dd>
+
+
+<p>119: That operation isn&rsquo;t allowed for clients.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorCacheMiss"></a><code>kMLErrorCacheMiss</code></dt>
+<dd>
+
+
+<p>120: The results were not found in the cache.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidNestedKey"></a><code>kMLErrorInvalidNestedKey</code></dt>
+<dd>
+
+
+<p>121: An invalid key was used in a nested JSONObject. Keys in NSDictionary values may not include &lsquo;$&rsquo; or &lsquo;.&rsquo;.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidFileName"></a><code>kMLErrorInvalidFileName</code></dt>
+<dd>
+
+
+<p>122: Invalid file name. A file name contains only a-zA-Z0-9_. characters and is between 1 and 36 characters.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidACL"></a><code>kMLErrorInvalidACL</code></dt>
+<dd>
+
+
+<p>123: Invalid ACL. An ACL with an invalid format was saved. This should not happen if you use <a href="../Classes/MLACL.html">MLACL</a>.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorTimeout"></a><code>kMLErrorTimeout</code></dt>
+<dd>
+
+
+<p>124: The request timed out on the server. Typically this indicates the request is too expensive.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidEmailAddress"></a><code>kMLErrorInvalidEmailAddress</code></dt>
+<dd>
+
+
+<p>125: The email address was invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorRoleNotChangeName"></a><code>kMLErrorRoleNotChangeName</code></dt>
+<dd>
+
+
+<p>136: Role name cannot be changed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorDuplicateValue"></a><code>kMLErrorDuplicateValue</code></dt>
+<dd>
+
+
+<p>137: A unique field was given a value that is already taken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidRoleName"></a><code>kMLErrorInvalidRoleName</code></dt>
+<dd>
+
+
+<p>139: Role&rsquo;s name is invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorExceededQuota"></a><code>kMLErrorExceededQuota</code></dt>
+<dd>
+
+
+<p>140: Exceeded an application quota. Upgrade to resolve.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLScriptError"></a><code>kMLScriptError</code></dt>
+<dd>
+
+
+<p>141: Cloud Code script had an error.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorRoleNotFound"></a><code>kMLErrorRoleNotFound</code></dt>
+<dd>
+
+
+<p>142: Role is not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorCloudCodeNotDeployed"></a><code>kMLErrorCloudCodeNotDeployed</code></dt>
+<dd>
+
+
+<p>143: The cloud code is not deployed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidToken"></a><code>kMLErrorInvalidToken</code></dt>
+<dd>
+
+
+<p>160: Session token is invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUsernameMissing"></a><code>kMLErrorUsernameMissing</code></dt>
+<dd>
+
+
+<p>200: Username is missing or empty</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserPasswordMissing"></a><code>kMLErrorUserPasswordMissing</code></dt>
+<dd>
+
+
+<p>201: Password is missing or empty</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUsernameTaken"></a><code>kMLErrorUsernameTaken</code></dt>
+<dd>
+
+
+<p>202: Username has already been taken</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserEmailTaken"></a><code>kMLErrorUserEmailTaken</code></dt>
+<dd>
+
+
+<p>203: Email has already been taken</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserEmailMissing"></a><code>kMLErrorUserEmailMissing</code></dt>
+<dd>
+
+
+<p>204: The email is missing, and must be specified</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserWithEmailNotFound"></a><code>kMLErrorUserWithEmailNotFound</code></dt>
+<dd>
+
+
+<p>205: A user with the specified email was not found</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserCannotBeAlteredWithoutSession"></a><code>kMLErrorUserCannotBeAlteredWithoutSession</code></dt>
+<dd>
+
+
+<p>206: The user cannot be altered by a client without the session.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserCanOnlyBeCreatedThroughSignUp"></a><code>kMLErrorUserCanOnlyBeCreatedThroughSignUp</code></dt>
+<dd>
+
+
+<p>207: Users can only be created through sign up</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorAccountAlreadyLinked"></a><code>kMLErrorAccountAlreadyLinked</code></dt>
+<dd>
+
+
+<p>208: An existing account already linked to another user.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorPasswordMisMatch"></a><code>kMLErrorPasswordMisMatch</code></dt>
+<dd>
+
+
+<p>210: Password does not match.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUserNotFound"></a><code>kMLErrorUserNotFound</code></dt>
+<dd>
+
+
+<p>211: User not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorLinkedIdMissing"></a><code>kMLErrorLinkedIdMissing</code></dt>
+<dd>
+
+
+<p>250: User cannot be linked to an account because that account’s ID is not found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidLinkedSession"></a><code>kMLErrorInvalidLinkedSession</code></dt>
+<dd>
+
+
+<p>251: A user with a linked (e.g. Facebook) account has an invalid session.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUnsupportedSevice"></a><code>kMLErrorUnsupportedSevice</code></dt>
+<dd>
+
+
+<p>252: No supported account linking service found.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidAuthData"></a><code>kMLErrorInvalidAuthData</code></dt>
+<dd>
+
+
+<p>253: The authData must be Hash type, not null.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorInvalidCaptcha"></a><code>kMLErrorInvalidCaptcha</code></dt>
+<dd>
+
+
+<p>301: CAPTCHA input is invalid.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUnauthorized"></a><code>kMLErrorUnauthorized</code></dt>
+<dd>
+
+
+<p>401: Unauthorized access, no App ID, or App ID and App key verification failed.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorRateLimit"></a><code>kMLErrorRateLimit</code></dt>
+<dd>
+
+
+<p>503: Rate limit exceeded.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorPathTaken"></a><code>kMLErrorPathTaken</code></dt>
+<dd>
+
+
+<p>600: The path has already been taken.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorPathNotExist"></a><code>kMLErrorPathNotExist</code></dt>
+<dd>
+
+
+<p>601: The path does not exists.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUnexpected"></a><code>kMLErrorUnexpected</code></dt>
+<dd>
+
+
+<p>602: Unexpected error. No infomation available.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="kMLErrorUnkown"></a><code>kMLErrorUnkown</code></dt>
+<dd>
+
+
+<p>90000: Unkown error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">MLConstants.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-10-10</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
