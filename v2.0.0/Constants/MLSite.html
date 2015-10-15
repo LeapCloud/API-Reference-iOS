@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MLLogLevel Constants Reference</title>
+	<title>MLSite Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MLLogLevel Constants Reference</h1>
+					<h1 class="title">MLSite Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>MLLogger.h</td>
+	<td>MLConstants.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,11 +75,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">MLLogLevel</h3>
+                    <h3 class="subsubtitle method-title">MLSite</h3>
                     
 					
 					<div class="section section-overview">
-                        <p><code>MLLogLevel</code> enum specifies different levels of logging that could be used to limit or display more messages in logs.</p>
+                        <p>This enum represents <a href="../Classes/MaxLeap.html">MaxLeap</a> server location.</p>
 					</div>
 					
 					
@@ -87,17 +87,11 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(int, MLLogLevel ) {<br>
+                        <code>typedef NS_ENUM(int, MLSite ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">MLLogLevelNone</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">MLSiteUS</a> = 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">MLLogLevelError</a> = 1,<br>
-                            
-                            &nbsp;&nbsp; <a href="">MLLogLevelWarning</a> = 2,<br>
-                            
-                            &nbsp;&nbsp; <a href="">MLLogLevelInfo</a> = 3,<br>
-                            
-                            &nbsp;&nbsp; <a href="">MLLogLevelDebug</a> = 4,<br>
+                            &nbsp;&nbsp; <a href="">MLSiteCN</a> = 1,<br>
                             
                             };</code>
                     
@@ -107,11 +101,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="MLLogLevelNone"></a><code>MLLogLevelNone</code></dt>
+                            <dt><a name="" title="MLSiteUS"></a><code>MLSiteUS</code></dt>
 <dd>
 
 
-<p>Log level that disables all logging.</p>
+<p>Use servers in US.</p>
 
 
 
@@ -119,16 +113,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">MLLogger.h</code>.
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="MLLogLevelError"></a><code>MLLogLevelError</code></dt>
+                            <dt><a name="" title="MLSiteCN"></a><code>MLSiteCN</code></dt>
 <dd>
 
 
-<p>Log level that allows error messages to the log.</p>
+<p>Use servers in CN.</p>
 
 
 
@@ -136,67 +130,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">MLLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="MLLogLevelWarning"></a><code>MLLogLevelWarning</code></dt>
-<dd>
-
-
-<p>Log level that allows the following messages to the log:
-- Errors
-- Warnings</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">MLLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="MLLogLevelInfo"></a><code>MLLogLevelInfo</code></dt>
-<dd>
-
-
-<p>Log level that allows the following messages to the log:
-- Errors
-- Warnings
-- Infomational messages</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">MLLogger.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="MLLogLevelDebug"></a><code>MLLogLevelDebug</code></dt>
-<dd>
-
-
-<p>Log level that allows the following messages to the log:
-- Errors
-- Warnings
-- Infomational messages
-- Debug messages</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">MLLogger.h</code>.
+		Declared In <code class="declared-in-ref">MLConstants.h</code>.
 	</p>
 	
 </dd>
@@ -213,7 +147,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">MLLogger.h</code></p>
+                        <p><code class="declared-in-ref">MLConstants.h</code></p>
                     </div>
                     
                     

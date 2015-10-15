@@ -78,13 +78,9 @@
 		
 		<option value="//api/name/becomeInBackgroundWithSessionToken:block:">+ becomeInBackgroundWithSessionToken:block:</option>
 		
-		<option value="//api/name/checkIsPassword:matchUsernameInBackground:block:">+ checkIsPassword:matchUsernameInBackground:block:</option>
-		
 		<option value="//api/name/checkUsernameExists:block:">+ checkUsernameExists:block:</option>
 		
 		<option value="//api/name/currentUser">+ currentUser</option>
-		
-		<option value="//api/name/enableAutomaticUser">+ enableAutomaticUser</option>
 		
 		<option value="//api/name/leapClassName">+ leapClassName</option>
 		
@@ -149,7 +145,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>A <a href="../Classes/MaxLeap.html">MaxLeap</a> Framework User Object that is a local representation of a <a href="#//api/name/user">user</a> persisted to the <a href="../Classes/MaxLeap.html">MaxLeap</a>. This class is a subclass of a <a href="../Classes/MLObject.html">MLObject</a>, and retains the same functionality of a <a href="../Classes/MLObject.html">MLObject</a>. You can also <a href="#//api/name/user">user</a> MLDataManager&rsquo;s api to update a <a href="#//api/name/user">user</a>.<br></p>
+						<p>A MLUser object represent a <a href="#//api/name/user">user</a> persisted to the <a href="../Classes/MaxLeap.html">MaxLeap</a>.<br></p>
 					</div>
 					
 					
@@ -327,52 +323,6 @@
 
 			
 
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MLUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/enableAutomaticUser" title="enableAutomaticUser"></a>
-	<h3 class="method-title"><code><a href="#//api/name/enableAutomaticUser">+&nbsp;enableAutomaticUser</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Enables automatic creation of anonymous users.  After calling this method, <a href="#//api/name/currentUser">[MLUser currentUser]</a> will always have a value. The <a href="#//api/name/user">user</a> will only be created on the server once the <a href="#//api/name/user">user</a> has been saved, or once an object with a relation to that <a href="#//api/name/user">user</a> or an ACL that refers to the <a href="#//api/name/user">user</a> has been saved.<br></p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)enableAutomaticUser</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Note: saveEventually will not work if an item being saved has a relation to an automatic <a href="#//api/name/user">user</a> that has never been saved.</p>
-			</div>
 			
 
 			
@@ -1177,69 +1127,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/checkIsPassword:matchUsernameInBackground:block:" title="checkIsPassword:matchUsernameInBackground:block:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/checkIsPassword:matchUsernameInBackground:block:">+&nbsp;checkIsPassword:matchUsernameInBackground:block:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Check whether the <a href="#//api/name/password">password</a> machtes the MLUserwhich&rsquo;s <a href="#//api/name/username">username</a> is &ldquo;username&rdquo;.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (void)checkIsPassword:(NSString *)<em>password</em> matchUsernameInBackground:(NSString *)<em>username</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>the <a href="#//api/name/password">password</a></p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>username</code></th>
-						<td><p>the <a href="#//api/name/username">username</a></p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>block</code></th>
-						<td><p>The block to execute. The block should have the following argument signature: (BOOL isMatch, NSError *error)</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MLUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/checkUsernameExists:block:" title="checkUsernameExists:block:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/checkUsernameExists:block:">+&nbsp;checkUsernameExists:block:</a></code>
 </h3>
@@ -1315,7 +1202,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-10-10</p>
+						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-10-15</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
