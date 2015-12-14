@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLPrivateFile Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/MIMEType">MIMEType</option>
+		
+		<option value="//api/name/bytes">bytes</option>
+		
+		<option value="//api/name/contents">contents</option>
+		
+		<option value="//api/name/createdAt">createdAt</option>
+		
+		<option value="//api/name/fileHash">fileHash</option>
+		
+		<option value="//api/name/isDeleted">isDeleted</option>
+		
+		<option value="//api/name/isDirectory">isDirectory</option>
+		
+		<option value="//api/name/isShared">isShared</option>
+		
+		<option value="//api/name/localPath">localPath</option>
+		
+		<option value="//api/name/remotePath">remotePath</option>
+		
+		<option value="//api/name/shareFrom">shareFrom</option>
+		
+		<option value="//api/name/size">size</option>
+		
+		<option value="//api/name/updatedAt">updatedAt</option>
+		
+		<option value="//api/name/url">url</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/copyAllInBackground:toPaths:block:">+ copyAllInBackground:toPaths:block:</option>
+		
+		<option value="//api/name/createFolderAtPathInBackground:block:">+ createFolderAtPathInBackground:block:</option>
+		
+		<option value="//api/name/deleteAllInBackground:block:">+ deleteAllInBackground:block:</option>
+		
+		<option value="//api/name/deletePathInBackground:block:">+ deletePathInBackground:block:</option>
+		
+		<option value="//api/name/fileWithRemotePath:">+ fileWithRemotePath:</option>
+		
+		<option value="//api/name/getUsage:">+ getUsage:</option>
+		
+		<option value="//api/name/moveAllInBackground:toPaths:block:">+ moveAllInBackground:toPaths:block:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancel">- cancel</option>
+		
+		<option value="//api/name/copyToPathInBackground:block:">- copyToPathInBackground:block:</option>
+		
+		<option value="//api/name/deleteInBackgroundWithBlock:">- deleteInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/downloadInBackgroundWithBlock:">- downloadInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/downloadInBackgroundWithBlock:progressBlock:">- downloadInBackgroundWithBlock:progressBlock:</option>
+		
+		<option value="//api/name/getMetadataInBackgroundWithBlock:">- getMetadataInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/getMetadataInBackgroundWithSkip:andLimit:block:">- getMetadataInBackgroundWithSkip:andLimit:block:</option>
+		
+		<option value="//api/name/getMetadataIncludeChildrenInBackgroundWithBlock:">- getMetadataIncludeChildrenInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/initWithLocalFileAtPath:remotePath:">- initWithLocalFileAtPath:remotePath:</option>
+		
+		<option value="//api/name/moveToPathInBackground:block:">- moveToPathInBackground:block:</option>
+		
+		<option value="//api/name/saveAndOverwriteInBackgroundWithBlock:">- saveAndOverwriteInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/saveAndOverwriteInBackgroundWithBlock:progressBlock:">- saveAndOverwriteInBackgroundWithBlock:progressBlock:</option>
+		
+		<option value="//api/name/saveInBackgroundWithBlock:">- saveInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/saveInBackgroundWithBlock:progressBlock:">- saveInBackgroundWithBlock:progressBlock:</option>
+		
+		<option value="//api/name/shareInBackgroundWithBlock:">- shareInBackgroundWithBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLPrivateFile Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLPrivateFile.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <a href="../Classes/MaxLeap.html">MaxLeap</a> Framework object that represents metadata of private file.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Creating a Private File" name="task_Creating a Private File"></a>
+						<h2 class="task-title">Creating a Private File</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithLocalFileAtPath:remotePath:" title="initWithLocalFileAtPath:remotePath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithLocalFileAtPath:remotePath:">&ndash;&nbsp;initWithLocalFileAtPath:remotePath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize a privateFile with <a href="#//api/name/localPath">localPath</a> and <a href="#//api/name/remotePath">remotePath</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithLocalFileAtPath:(nullable NSString *)<em>localPath</em> remotePath:(NSString *)<em>remotePath</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>localPath</code></th>
+						<td><p>The path of the file on local disk.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePath</code></th>
+						<td><p>The path of the file on remote server, shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A private file instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWithRemotePath:" title="fileWithRemotePath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWithRemotePath:">+&nbsp;fileWithRemotePath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a privateFile with <a href="#//api/name/remotePath">remotePath</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)fileWithRemotePath:(NSString *)<em>remotePath</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remotePath</code></th>
+						<td><p>The path of the file on remote server, shouldn&rsquo;t be nil.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A private file instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Properties - File Metadata" name="task_Properties - File Metadata"></a>
+						<h2 class="task-title">Properties - File Metadata</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="method-title"><code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A formated string representing the item size, eg: &ldquo;1.1 MB&rdquo;, &ldquo;832.5 KB&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSString *size</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/bytes" title="bytes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bytes">&nbsp;&nbsp;bytes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A number indicates the <a href="#//api/name/size">size</a> of item in bytes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger bytes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/MIMEType" title="MIMEType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/MIMEType">&nbsp;&nbsp;MIMEType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The file&rsquo;s MIMEType.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSString *MIMEType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileHash" title="fileHash"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileHash">&nbsp;&nbsp;fileHash</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hash of the source file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *fileHash</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createdAt" title="createdAt"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createdAt">&nbsp;&nbsp;createdAt</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When the file or directory was created.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSDate *createdAt</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatedAt" title="updatedAt"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatedAt">&nbsp;&nbsp;updatedAt</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When the file or directory was last updated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSDate *updatedAt</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remotePath" title="remotePath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remotePath">&nbsp;&nbsp;remotePath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The item&rsquo;s path on remote server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *remotePath</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localPath" title="localPath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localPath">&nbsp;&nbsp;localPath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The local path of the item.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *localPath</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDirectory" title="isDirectory"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDirectory">&nbsp;&nbsp;isDirectory</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether this item is a directory.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isDirectory</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contents" title="contents"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contents">&nbsp;&nbsp;contents</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The contents of the dir. If this item is not a directory, contents is nil.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSArray *contents</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDeleted" title="isDeleted"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDeleted">&nbsp;&nbsp;isDeleted</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the item is deleted from remote server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isDeleted</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isShared" title="isShared"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isShared">&nbsp;&nbsp;isShared</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the item is shared from another user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isShared</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shareFrom" title="shareFrom"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareFrom">&nbsp;&nbsp;shareFrom</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The id of user who shared this item.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSString *shareFrom</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="method-title"><code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The share url.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nullable) NSURL *url</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Upload Private Files" name="task_Upload Private Files"></a>
+						<h2 class="task-title">Upload Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:" title="saveInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveInBackgroundWithBlock:">&ndash;&nbsp;saveInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.<a href="#//api/name/localPath">localPath</a> to <a href="../Classes/MaxLeap.html">MaxLeap</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@disscussion If the file&rsquo;s <a href="#//api/name/fileHash">fileHash</a> is not set, the md5 of file will be calculated and used.
+If file exists on remote path, the uploading will fail with a kMLErrorPathTaken error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAndOverwriteInBackgroundWithBlock:" title="saveAndOverwriteInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAndOverwriteInBackgroundWithBlock:">&ndash;&nbsp;saveAndOverwriteInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.<a href="#//api/name/localPath">localPath</a> and save at the file.<a href="#//api/name/remotePath">remotePath</a> on <a href="../Classes/MaxLeap.html">MaxLeap</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAndOverwriteInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@disscussion If the file&rsquo;s <a href="#//api/name/fileHash">fileHash</a> is not set, the md5 of file will be calculated and used.
+If file exists on remote path, it will be overwrite.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:progressBlock:" title="saveInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;saveInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.<a href="#//api/name/localPath">localPath</a> and save at the file.<a href="#//api/name/remotePath">remotePath</a> on <a href="../Classes/MaxLeap.html">MaxLeap</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@disscussion If the file&rsquo;s <a href="#//api/name/fileHash">fileHash</a> is not set, the md5 of file will be calculated and used.
+If file exists on remote path, the uploading will fail with a kMLErrorPathTaken error.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAndOverwriteInBackgroundWithBlock:progressBlock:" title="saveAndOverwriteInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAndOverwriteInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;saveAndOverwriteInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> upload file at file.<a href="#//api/name/localPath">localPath</a> and save at the file.<a href="#//api/name/remotePath">remotePath</a> on <a href="../Classes/MaxLeap.html">MaxLeap</a> file servers.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAndOverwriteInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute on main thread after uploading file, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@disscussion If the file&rsquo;s <a href="#//api/name/fileHash">fileHash</a> is not set, the md5 of file will be calculated and used.
+If file exists on remote path, it will be overwrite.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Download Private Files" name="task_Download Private Files"></a>
+						<h2 class="task-title">Download Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/downloadInBackgroundWithBlock:" title="downloadInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadInBackgroundWithBlock:">&ndash;&nbsp;downloadInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download and save the data at file.<a href="#//api/name/localPath">localPath</a>. If the local path is nil, default path will be used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadInBackgroundWithBlock:progressBlock:" title="downloadInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;downloadInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download and save the data at file.<a href="#//api/name/localPath">localPath</a>. If the local path is nil, default path will be used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after file downloading. It should have the following argument signature: (NSString <em>filePath, NSError </em>error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>Block to notify the upload progress, it should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancels the current request (whether upload or download of file data).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Delete Private Files" name="task_Delete Private Files"></a>
+						<h2 class="task-title">Delete Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deleteInBackgroundWithBlock:" title="deleteInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteInBackgroundWithBlock:">&ndash;&nbsp;deleteInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the file at file.<a href="#//api/name/remotePath">remotePath</a> from remote server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after deleting, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deletePathInBackground:block:" title="deletePathInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deletePathInBackground:block:">+&nbsp;deletePathInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the file at the path from remote server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deletePathInBackground:(NSString *)<em>path</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>the remote path to delete</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block to excute after deleting, it should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAllInBackground:block:" title="deleteAllInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAllInBackground:block:">+&nbsp;deleteAllInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes a collection of files all at once asynchronously and excutes the block when done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)deleteAllInBackground:(nullable NSArray&lt;NSString*&gt; *)<em>filePaths</em> block:(void ( ^ ) ( BOOL isAllDeleted , NSArray&lt;NSString*&gt; *deleted , NSError *__nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filePaths</code></th>
+						<td><p>The remote paths of files to delete.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Get Metadata of a Private File" name="task_Get Metadata of a Private File"></a>
+						<h2 class="task-title">Get Metadata of a Private File</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getMetadataInBackgroundWithBlock:" title="getMetadataInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMetadataInBackgroundWithBlock:">&ndash;&nbsp;getMetadataInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the metadata of a file and then excutes the block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMetadataInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMetadataIncludeChildrenInBackgroundWithBlock:" title="getMetadataIncludeChildrenInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMetadataIncludeChildrenInBackgroundWithBlock:">&ndash;&nbsp;getMetadataIncludeChildrenInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the metadata of a file including its children if it&rsquo;s a directory and then excutes the block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMetadataIncludeChildrenInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMetadataInBackgroundWithSkip:andLimit:block:" title="getMetadataInBackgroundWithSkip:andLimit:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMetadataInBackgroundWithSkip:andLimit:block:">&ndash;&nbsp;getMetadataInBackgroundWithSkip:andLimit:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the metadata of a file and excutes the block when done.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMetadataInBackgroundWithSkip:(int)<em>skip</em> andLimit:(int)<em>limit</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>skip</code></th>
+						<td><p>The number of file metadata to skip before returning any.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>A limit on the number of file metadata to return. The default limit is 200, with a maximum of 2000 results being returned at a time.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Get usage" name="task_Get usage"></a>
+						<h2 class="task-title">Get usage</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getUsage:" title="getUsage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUsage:">+&nbsp;getUsage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the usage of current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getUsage:(MLUsageResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block parameter represents usage of current user. It has 3 parameters. 1. fileCount: How many private files the current user save on <a href="../Classes/MaxLeap.html">MaxLeap</a> file servers. 2. usedCapacity: The capacity current user used in <a href="#//api/name/bytes">bytes</a>. 3. error: If there is an error, both fileCount and usedCapacity are -1.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Copy Private Files" name="task_Copy Private Files"></a>
+						<h2 class="task-title">Copy Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/copyToPathInBackground:block:" title="copyToPathInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyToPathInBackground:block:">&ndash;&nbsp;copyToPathInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copys a file to another remote path.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)copyToPathInBackground:(NSString *)<em>dstPath</em> block:(nullable MLPrivateFileResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPath</code></th>
+						<td><p>The destination remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (MLPrivateFile <em>newFile, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/copyAllInBackground:toPaths:block:" title="copyAllInBackground:toPaths:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/copyAllInBackground:toPaths:block:">+&nbsp;copyAllInBackground:toPaths:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Copys a collection of private files at <code>scrPaths</code> to remote paths <code>dstPaths</code>. The result will pass in the <code>block</code>.
+The block has three parameters: <code>isAllCompleted</code> indicates whether all files was copied; <code>completed</code> contains an array of path pairs which was copied successfully, its structure: [{&ldquo;from&rdquo;:scrPath, &ldquo;to&rdquo;:dstPath}]; <code>error</code> is nil unless the network request failed or <code>scrPaths</code> does not match with <code>dstPaths</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)copyAllInBackground:(nullable NSArray&lt;NSString*&gt; *)<em>scrPaths</em> toPaths:(nullable NSOrderedSet&lt;NSString*&gt; *)<em>dstPaths</em> block:(void ( ^ ) ( BOOL isAllCompleted , NSArray&lt;NSString*&gt; *completed , NSError *__nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrPaths</code></th>
+						<td><p>An array of private file remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPaths</code></th>
+						<td><p>An orderedSet of destination remote path. These paths must match with scrPaths.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL isAllCompleted, NSArray <em>completed, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Move Private Files" name="task_Move Private Files"></a>
+						<h2 class="task-title">Move Private Files</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/moveToPathInBackground:block:" title="moveToPathInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/moveToPathInBackground:block:">&ndash;&nbsp;moveToPathInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Moves a file to another remote path.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)moveToPathInBackground:(NSString *)<em>dstPath</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPath</code></th>
+						<td><p>The destination remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (MLPrivateFile <em>newFile, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/moveAllInBackground:toPaths:block:" title="moveAllInBackground:toPaths:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/moveAllInBackground:toPaths:block:">+&nbsp;moveAllInBackground:toPaths:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Moves a collection of private files at <code>scrPaths</code> to remote paths <code>dstPaths</code>. The result will pass in the <code>block</code>.
+The block has three parameters: <code>isAllCompleted</code> indicates whether all files was moved; <code>completed</code> contains an array of path pairs which was copied successfully, its structure: [{&ldquo;from&rdquo;:scrPath, &ldquo;to&rdquo;:dstPath}]; <code>error</code> is nil unless the network request failed or <code>scrPaths</code> does not match with <code>dstPaths</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)moveAllInBackground:(nullable NSOrderedSet&lt;NSString*&gt; *)<em>scrPaths</em> toPaths:(nullable NSOrderedSet&lt;NSString*&gt; *)<em>dstPaths</em> block:(void ( ^ ) ( BOOL isAllCompleted , NSArray&lt;NSString*&gt; *completed , NSError *__nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scrPaths</code></th>
+						<td><p>An array of private file remote path.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dstPaths</code></th>
+						<td><p>An orderedSet of destination remote path. These paths must match with <code>scrPaths</code>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL isAllCompleted, NSArray <em>completed, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Create Folder" name="task_Create Folder"></a>
+						<h2 class="task-title">Create Folder</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createFolderAtPathInBackground:block:" title="createFolderAtPathInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createFolderAtPathInBackground:block:">+&nbsp;createFolderAtPathInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a folder at remote path file.<a href="#//api/name/remotePath">remotePath</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createFolderAtPathInBackground:(NSString *)<em>path</em> block:(nullable MLPrivateFileResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The remote path of a directory.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Share (Mock)" name="task_Share (Mock)"></a>
+						<h2 class="task-title">Share (Mock)</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/shareInBackgroundWithBlock:" title="shareInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shareInBackgroundWithBlock:">&ndash;&nbsp;shareInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Share a file or directory. (Mock)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)shareInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block should have the following argument signature: (BOOL success, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLPrivateFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-12-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

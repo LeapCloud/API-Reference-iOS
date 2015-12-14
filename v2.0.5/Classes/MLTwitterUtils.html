@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLTwitterUtils Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/initializeWithConsumerKey:consumerSecret:">+ initializeWithConsumerKey:consumerSecret:</option>
+		
+		<option value="//api/name/isLinkedWithUser:">+ isLinkedWithUser:</option>
+		
+		<option value="//api/name/linkUser:block:">+ linkUser:block:</option>
+		
+		<option value="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:">+ linkUser:twitterId:screenName:authToken:authTokenSecret:block:</option>
+		
+		<option value="//api/name/logInWithBlock:">+ logInWithBlock:</option>
+		
+		<option value="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:">+ logInWithTwitterId:screenName:authToken:authTokenSecret:block:</option>
+		
+		<option value="//api/name/twitter">+ twitter</option>
+		
+		<option value="//api/name/unlinkUserInBackground:block:">+ unlinkUserInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLTwitterUtils Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLTwitterUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides utility functions for working with Twitter in a <a href="../Classes/MaxLeap.html">MaxLeap</a> application.</p>
+
+<p>This class is currently for iOS only.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Interacting With Twitter" name="task_Interacting With Twitter"></a>
+						<h2 class="task-title">Interacting With Twitter</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/twitter" title="twitter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/twitter">+&nbsp;twitter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the instance of the Twitter object that <a href="../Classes/MaxLeap.html">MaxLeap</a> uses.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable ML_Twitter *)twitter</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The Twitter instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initializeWithConsumerKey:consumerSecret:" title="initializeWithConsumerKey:consumerSecret:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeWithConsumerKey:consumerSecret:">+&nbsp;initializeWithConsumerKey:consumerSecret:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes the Twitter singleton. You must invoke this in order to use the Twitter functionality in <a href="../Classes/MaxLeap.html">MaxLeap</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initializeWithConsumerKey:(NSString *)<em>consumerKey</em> consumerSecret:(NSString *)<em>consumerSecret</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>consumerKey</code></th>
+						<td><p>Your Twitter application&rsquo;s consumer key.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>consumerSecret</code></th>
+						<td><p>Your Twitter application&rsquo;s consumer secret.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the user has their account linked to Twitter.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(nullable MLUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to check for a Twitter link. The user must be logged in on this device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>True if the user has their account linked to Twitter.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging In &amp; Creating Twitter-Linked Users" name="task_Logging In &amp; Creating Twitter-Linked Users"></a>
+						<h2 class="task-title">Logging In &amp; Creating Twitter-Linked Users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logInWithBlock:" title="logInWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithBlock:">+&nbsp;logInWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs in a user using Twitter. This method delegates to Twitter to authenticate the user, and then automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInWithBlock:(nullable MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/MLUser.html">MLUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:" title="logInWithTwitterId:screenName:authToken:authTokenSecret:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInWithTwitterId:screenName:authToken:authTokenSecret:block:">+&nbsp;logInWithTwitterId:screenName:authToken:authTokenSecret:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs in a user using Twitter. Allows you to handle user login to Twitter, then provide authentication data to log in (or create, in the case where it is a new user) the <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInWithTwitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> block:(nullable MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>twitterId</code></th>
+						<td><p>The id of the Twitter user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenName</code></th>
+						<td><p>The screen name of the Twitter user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authToken</code></th>
+						<td><p>The auth token for the user&rsquo;s session</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authTokenSecret</code></th>
+						<td><p>The auth token secret for the user&rsquo;s session</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/MLUser.html">MLUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Linking Users with Twitter" name="task_Linking Users with Twitter"></a>
+						<h2 class="task-title">Linking Users with Twitter</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/linkUser:block:" title="linkUser:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUser:block:">+&nbsp;linkUser:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Links Twitter to an existing <a href="../Classes/MLUser.html">MLUser</a>. This method delegates to Twitter to authenticate the user, and then automatically links the account to the <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUser:(MLUser *)<em>user</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Twitter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL <em>success, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:" title="linkUser:twitterId:screenName:authToken:authTokenSecret:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUser:twitterId:screenName:authToken:authTokenSecret:block:">+&nbsp;linkUser:twitterId:screenName:authToken:authTokenSecret:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Links Twitter to an existing <a href="../Classes/MLUser.html">MLUser</a>. Allows you to handle user login to Twitter, then provide authentication data to link the account to the <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUser:(MLUser *)<em>user</em> twitterId:(NSString *)<em>twitterId</em> screenName:(NSString *)<em>screenName</em> authToken:(NSString *)<em>authToken</em> authTokenSecret:(NSString *)<em>authTokenSecret</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Twitter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>twitterId</code></th>
+						<td><p>The id of the Twitter user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>screenName</code></th>
+						<td><p>The screen name of the Twitter user being linked</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authToken</code></th>
+						<td><p>The auth token for the user&rsquo;s session</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authTokenSecret</code></th>
+						<td><p>The auth token secret for the user&rsquo;s session</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL <em>success, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Unlinking Users from Twitter" name="task_Unlinking Users from Twitter"></a>
+						<h2 class="task-title">Unlinking Users from Twitter</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Makes an asynchronous request to unlink a user from a Twitter account.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(MLUser *)<em>user</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to unlink from Twitter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLTwitterUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 MaxLeap. All rights reserved. Updated: 2015-12-14</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
