@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLWeiboUtils Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/handleAuthorizeResponse:">+ handleAuthorizeResponse:</option>
+		
+		<option value="//api/name/initializeWeiboWithAppKey:redirectURI:">+ initializeWeiboWithAppKey:redirectURI:</option>
+		
+		<option value="//api/name/isLinkedWithUser:">+ isLinkedWithUser:</option>
+		
+		<option value="//api/name/linkUserInBackground:withAccessToken:block:">+ linkUserInBackground:withAccessToken:block:</option>
+		
+		<option value="//api/name/linkUserInBackground:withScope:block:">+ linkUserInBackground:withScope:block:</option>
+		
+		<option value="//api/name/loginInBackgroundWithAccessToken:block:">+ loginInBackgroundWithAccessToken:block:</option>
+		
+		<option value="//api/name/loginInBackgroundWithScope:block:">+ loginInBackgroundWithScope:block:</option>
+		
+		<option value="//api/name/unlinkUserInBackground:block:">+ unlinkUserInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLWeiboUtils Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLWeiboUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Provides utility functions for working with Weibo in a <a href="../Classes/MaxLeap.html">MaxLeap</a> application.<br></p>
+
+<p>This class is currently for iOS only.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Interacting With Weibo" name="task_Interacting With Weibo"></a>
+						<h2 class="task-title">Interacting With Weibo</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initializeWeiboWithAppKey:redirectURI:" title="initializeWeiboWithAppKey:redirectURI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeWeiboWithAppKey:redirectURI:">+&nbsp;initializeWeiboWithAppKey:redirectURI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes <a href="../Classes/MaxLeap.html">MaxLeap</a> Weibo Utils.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)initializeWeiboWithAppKey:(NSString *)<em>appKey</em> redirectURI:(NSString *)<em>redirectURI</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appKey</code></th>
+						<td><p>Your weibo app key.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>redirectURI</code></th>
+						<td><p>@see WBAuthorizeRequest.redirectURI in WeiboSDK.h</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Return the value returned by <code>[WeiboSDK regiterAppKey:]</code></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> You must invoke this in order to use the Weibo functionality in <a href="../Classes/MaxLeap.html">MaxLeap</a>.</p></div><div class="warning"><p><strong>Warning:</strong> The apis below are only available when <code>[WeiboSDK regiterAppKey:]</code> successfully.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging In" name="task_Logging In"></a>
+						<h2 class="task-title">Logging In</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/loginInBackgroundWithScope:block:" title="loginInBackgroundWithScope:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginInBackgroundWithScope:block:">+&nbsp;loginInBackgroundWithScope:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> logs in a user using Weibo with scopes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loginInBackgroundWithScope:(NSString *)<em>scope</em> block:(MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scope</code></th>
+						<td><p>The API scopes requested by the app in a list of comma-delimited, case sensitive strings. <a href="http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E">http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E</a>#scope</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the log in completes. It should have the following signature: <code>^(</code>MLUser<code> *user, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Weibo SDK to authenticate the user, and then
+automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/MLUser.html"><code>MLUser</code></a>.
+The <code>didReceiveWeiboResponse:</code> method defined in <code>WeiboSDKDelegate</code> should be implemented and
+call <a href="#//api/name/handleAuthorizeResponse:"><code>[MLWeiboUtils handleAuthorizeResponse:]</code></a> when the delegate receive <code>WBAuthorizeResponse</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleAuthorizeResponse:" title="handleAuthorizeResponse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleAuthorizeResponse:">+&nbsp;handleAuthorizeResponse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handle the weibo authenticate response to complete the login process.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)handleAuthorizeResponse:(WBAuthorizeResponse *)<em>authorizeResponse</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>authorizeResponse</code></th>
+						<td><p>The authenticate response received by <code>WeiboSDKDelegate</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method result in a <a href="../Classes/MLUser.html"><code>MLUser</code></a> logging in or creating. And then the block in methocd <a href="#//api/name/loginInBackgroundWithScope:block:"><code>loginInBackgroundWithScope:block:</code></a> will be excuted on main thread.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginInBackgroundWithAccessToken:block:" title="loginInBackgroundWithAccessToken:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginInBackgroundWithAccessToken:block:">+&nbsp;loginInBackgroundWithAccessToken:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Logs in a user using weibo. Allows you to handle user login to weibo, then provide authentication data to log in (or create, in the case where it is a new user) the <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loginInBackgroundWithAccessToken:(MLWeiboAccessToken *)<em>token</em> block:(MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The weibo authentication data.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. The block should have the following argument signature: (<a href="../Classes/MLUser.html">MLUser</a> <em>user, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Linking Users" name="task_Linking Users"></a>
+						<h2 class="task-title">Linking Users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/linkUserInBackground:withScope:block:" title="linkUserInBackground:withScope:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:withScope:block:">+&nbsp;linkUserInBackground:withScope:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> links weibo with scopes to an existing <a href="../Classes/MLUser.html"><code>MLUser</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUserInBackground:(MLUser *)<em>user</em> withScope:(NSString *)<em>scope</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link with weibo.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scope</code></th>
+						<td><p>The API scopes requested by the app in a list of comma-delimited, case sensitive strings. <a href="http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E">http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E</a>#scope</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the linking completes. It should have the following signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Weibo SDK to authenticate the user, and then automatically links the account to the <a href="../Classes/MLUser.html"><code>MLUser</code></a>.
+It will also save any unsaved changes that were made to the <code>user</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUserInBackground:withAccessToken:block:" title="linkUserInBackground:withAccessToken:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:withAccessToken:block:">+&nbsp;linkUserInBackground:withAccessToken:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> links Weibo with weibo authentication data to an existing <a href="../Classes/MLUser.html"><code>MLUser</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUserInBackground:(MLUser *)<em>user</em> withAccessToken:(MLWeiboAccessToken *)<em>token</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link with weibo</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>The weibo authentication data</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the linking completes. It should have the following signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlinks the <a href="../Classes/MLUser.html"><code>MLUser</code></a> from a Weibo account <em>asynchronously</em>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(MLUser *)<em>user</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to unlink from weibo.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute. It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting Linked State" name="task_Getting Linked State"></a>
+						<h2 class="task-title">Getting Linked State</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the user has their account linked to weibo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(MLUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to check for a weibo link. The user must be logged in on this device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if the user has their account linked to weibo, otherwise <code>NO</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLWeiboUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

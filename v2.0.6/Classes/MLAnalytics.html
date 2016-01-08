@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLAnalytics Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/beginLogPageView:">+ beginLogPageView:</option>
+		
+		<option value="//api/name/endLogPageView:">+ endLogPageView:</option>
+		
+		<option value="//api/name/onPurchaseCancelled:isSubscription:">+ onPurchaseCancelled:isSubscription:</option>
+		
+		<option value="//api/name/onPurchaseFailed:isSubscription:">+ onPurchaseFailed:isSubscription:</option>
+		
+		<option value="//api/name/onPurchaseRequest:isSubscription:">+ onPurchaseRequest:isSubscription:</option>
+		
+		<option value="//api/name/onPurchaseSuccess:isSubscription:">+ onPurchaseSuccess:isSubscription:</option>
+		
+		<option value="//api/name/setSessionContinueSeconds:">+ setSessionContinueSeconds:</option>
+		
+		<option value="//api/name/trackEvent:">+ trackEvent:</option>
+		
+		<option value="//api/name/trackEvent:count:">+ trackEvent:count:</option>
+		
+		<option value="//api/name/trackEvent:parameters:">+ trackEvent:parameters:</option>
+		
+		<option value="//api/name/trackEvent:parameters:count:">+ trackEvent:parameters:count:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLAnalytics Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLAnalytics.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>MLAnalytics provides methods to logging user behavior to analytics backend.<br>
+<br>
+Events for Session starting and session ending are logged automatically when app enter foreground or background.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setSessionContinueSeconds:" title="setSessionContinueSeconds:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSessionContinueSeconds:">+&nbsp;setSessionContinueSeconds:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the timeout for expiring a <a href="../Classes/MaxLeap.html">MaxLeap</a> session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)setSessionContinueSeconds:(int)<em>seconds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>seconds</code></th>
+						<td><p>The time in seconds to set the session timeout to.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is an optional method that sets the time the app may be in the background before
+starting a new session upon resume.  The default value for the session timeout is 0
+seconds in the background.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Custom Event Analytics" name="task_Custom Event Analytics"></a>
+						<h2 class="task-title">Custom Event Analytics</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/trackEvent:" title="trackEvent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEvent:">+&nbsp;trackEvent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the occurrence of a custom event and reports to <a href="../Classes/MaxLeap.html">MaxLeap</a> backend.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackEvent:(NSString *)<em>name</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the custom event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackEvent:count:" title="trackEvent:count:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEvent:count:">+&nbsp;trackEvent:count:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the occurrence of a custom event and reports to <a href="../Classes/MaxLeap.html">MaxLeap</a> backend.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackEvent:(NSString *)<em>name</em> count:(int)<em>count</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the custom event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of this event occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackEvent:parameters:" title="trackEvent:parameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEvent:parameters:">+&nbsp;trackEvent:parameters:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the occurrence of a custom event with additional parameters.<br></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackEvent:(NSString *)<em>name</em> parameters:(nullable NSDictionary ML_GENERIC ( NSString *, NSString *) *)<em>parameters</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the custom event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The dictionary of additional information for this event.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Event parameters can be used to provide additional information about the event. The parameters is a dictionary containing Key-Value pairs of parameters. Keys and values should be NSStrings.<br></p>
+
+<p>The following is a sample to track a purchase with additional parameters:<br></p>
+
+<p>@code
+NSDictionary *parameters = @{@&ldquo;productName&rdquo;: @&ldquo;iPhone 6s&rdquo;,
+@&ldquo;productCategory&rdquo;: @&ldquo;electronics&rdquo;};
+[MLAnalytics trackEvent:@&ldquo;productPurchased&rdquo; parameters:parameters];
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/trackEvent:parameters:count:" title="trackEvent:parameters:count:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/trackEvent:parameters:count:">+&nbsp;trackEvent:parameters:count:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the occurrence of a custom event with additional parameters.<br></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)trackEvent:(NSString *)<em>name</em> parameters:(nullable NSDictionary ML_GENERIC ( NSString *, NSString *) *)<em>parameters</em> count:(int)<em>count</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The name of the custom event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The dictionary of additional information for this event.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>count</code></th>
+						<td><p>The number of this event occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Event parameters can be used to provide additional information about the event. The parameters is a dictionary containing Key-Value pairs of parameters. Keys and values should be NSStrings.<br></p>
+
+<p>The following is a sample to track a purchase with additional parameters:<br></p>
+
+<p>@code
+NSDictionary *parameters = @{@&ldquo;productName&rdquo;: @&ldquo;iPhone 6s&rdquo;,
+@&ldquo;productCategory&rdquo;: @&ldquo;electronics&rdquo;};
+[MLAnalytics trackEvent:@&ldquo;productPurchased&rdquo; parameters:parameters];
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Page View Analytics" name="task_Page View Analytics"></a>
+						<h2 class="task-title">Page View Analytics</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/beginLogPageView:" title="beginLogPageView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beginLogPageView:">+&nbsp;beginLogPageView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the duration of view displayed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)beginLogPageView:(NSString *)<em>pageName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageName</code></th>
+						<td><p>The name of the page.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tracks the beginning of view display.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/endLogPageView:" title="endLogPageView:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/endLogPageView:">+&nbsp;endLogPageView:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the duration of view displayed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)endLogPageView:(NSString *)<em>pageName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pageName</code></th>
+						<td><p>The name of the page.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Tracks the ending of view display.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="IAP Purchase Analytics" name="task_IAP Purchase Analytics"></a>
+						<h2 class="task-title">IAP Purchase Analytics</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/onPurchaseRequest:isSubscription:" title="onPurchaseRequest:isSubscription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPurchaseRequest:isSubscription:">+&nbsp;onPurchaseRequest:isSubscription:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the beginning of requesting iap purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onPurchaseRequest:(SKPaymentTransaction *)<em>transaction</em> isSubscription:(BOOL)<em>isSubscription</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>The transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSubscription</code></th>
+						<td><p>Whether the transaction is a subscription</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onPurchaseSuccess:isSubscription:" title="onPurchaseSuccess:isSubscription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPurchaseSuccess:isSubscription:">+&nbsp;onPurchaseSuccess:isSubscription:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the success of iap purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onPurchaseSuccess:(SKPaymentTransaction *)<em>transaction</em> isSubscription:(BOOL)<em>isSubscription</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>The transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSubscription</code></th>
+						<td><p>Whether the transaction is a subscription</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onPurchaseCancelled:isSubscription:" title="onPurchaseCancelled:isSubscription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPurchaseCancelled:isSubscription:">+&nbsp;onPurchaseCancelled:isSubscription:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the occurrence of cancelling iap purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onPurchaseCancelled:(SKPaymentTransaction *)<em>transaction</em> isSubscription:(BOOL)<em>isSubscription</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>The transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSubscription</code></th>
+						<td><p>Whether the transaction is a subscription</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/onPurchaseFailed:isSubscription:" title="onPurchaseFailed:isSubscription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/onPurchaseFailed:isSubscription:">+&nbsp;onPurchaseFailed:isSubscription:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Tracks the failure of iap purchase.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)onPurchaseFailed:(SKPaymentTransaction *)<em>transaction</em> isSubscription:(BOOL)<em>isSubscription</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>transaction</code></th>
+						<td><p>The transaction</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isSubscription</code></th>
+						<td><p>Whether the transaction is a subscription</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLAnalytics.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
