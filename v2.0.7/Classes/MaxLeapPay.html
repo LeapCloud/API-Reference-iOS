@@ -58,11 +58,13 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/fetchOrderInfoWithBillNo:channel:block:">+ fetchOrderInfoWithBillNo:channel:block:</option>
-		
 		<option value="//api/name/handleOpenUrl:completion:">+ handleOpenUrl:completion:</option>
 		
 		<option value="//api/name/isChannelAvaliable:">+ isChannelAvaliable:</option>
+		
+		<option value="//api/name/queryOrderWithBillNo:andChannel:block:">+ queryOrderWithBillNo:andChannel:block:</option>
+		
+		<option value="//api/name/queryOrderWithBillNo:block:">+ queryOrderWithBillNo:block:</option>
 		
 		<option value="//api/name/setEnvironment:">+ setEnvironment:</option>
 		
@@ -256,8 +258,8 @@
 			
 			<div class="method-subsection brief-description">
 				<p>Start the payment.
-After transaction finish, the block will be execute on main queue bringing the result.
-You can check whether the transaction is success by check the <code>code</code> property of result.</p>
+After transaction completion, the block will be execute on main thread and bring the result.
+You can check <code>result.code</code> to find out whether the transaction success or not.</p>
 			</div>
 			
 		    
@@ -369,8 +371,8 @@ So, it is important for you to call this method in <code>application:openURL:sou
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/fetchOrderInfoWithBillNo:channel:block:" title="fetchOrderInfoWithBillNo:channel:block:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/fetchOrderInfoWithBillNo:channel:block:">+&nbsp;fetchOrderInfoWithBillNo:channel:block:</a></code>
+	<a name="//api/name/queryOrderWithBillNo:andChannel:block:" title="queryOrderWithBillNo:andChannel:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryOrderWithBillNo:andChannel:block:">+&nbsp;queryOrderWithBillNo:andChannel:block:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -385,7 +387,7 @@ So, it is important for you to call this method in <code>application:openURL:sou
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (void)fetchOrderInfoWithBillNo:(NSString *)<em>billNo</em> channel:(MLPayChannel)<em>channel</em> block:(MLOrderResultBlock)<em>block</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)queryOrderWithBillNo:(NSString *)<em>billNo</em> andChannel:(MLPayChannel)<em>channel</em> block:(MLOrderResultBlock)<em>block</em></code></div>
 
 		    
 			
@@ -436,6 +438,70 @@ So, it is important for you to call this method in <code>application:openURL:sou
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryOrderWithBillNo:block:" title="queryOrderWithBillNo:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryOrderWithBillNo:block:">+&nbsp;queryOrderWithBillNo:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query orders with the billNo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)queryOrderWithBillNo:(NSString *)<em>billNo</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>billNo</code></th>
+						<td><p>The <code>billNo</code> of the order to query.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>Block callback to bring the query result. It should have the following signature: (NSArray <a href="../Classes/MLOrder.html">MLOrder</a><em>> </em>orderList, NSError *error).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Orders in different channel may have the same bill No.
+This api can be used to verify the authenticity of a transaction by check <code>status</code> of the order. The valid order status is <code>pay</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxLeapPay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -449,7 +515,7 @@ So, it is important for you to call this method in <code>application:openURL:sou
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-07</p>
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
