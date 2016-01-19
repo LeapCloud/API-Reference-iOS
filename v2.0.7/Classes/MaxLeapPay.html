@@ -60,6 +60,8 @@
 		
 		<option value="//api/name/handleOpenUrl:completion:">+ handleOpenUrl:completion:</option>
 		
+		<option value="//api/name/handleWXPayResponse:">+ handleWXPayResponse:</option>
+		
 		<option value="//api/name/isChannelAvaliable:">+ isChannelAvaliable:</option>
 		
 		<option value="//api/name/queryOrderWithBillNo:andChannel:block:">+ queryOrderWithBillNo:andChannel:block:</option>
@@ -67,6 +69,8 @@
 		<option value="//api/name/queryOrderWithBillNo:block:">+ queryOrderWithBillNo:block:</option>
 		
 		<option value="//api/name/setEnvironment:">+ setEnvironment:</option>
+		
+		<option value="//api/name/setWXAppId:wxDelegate:description:">+ setWXAppId:wxDelegate:description:</option>
 		
 		<option value="//api/name/startPayment:completion:">+ startPayment:completion:</option>
 		
@@ -246,6 +250,74 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/setWXAppId:wxDelegate:description:" title="setWXAppId:wxDelegate:description:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setWXAppId:wxDelegate:description:">+&nbsp;setWXAppId:wxDelegate:description:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize WeChat pay environment by calling <code>[WXApi registerApp:withDescription:]</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)setWXAppId:(NSString *)<em>appId</em> wxDelegate:(id&lt;WXApiDelegate&gt;)<em>wxDelegate</em> description:(nullable NSString *)<em>description</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appId</code></th>
+						<td><p>wechat appid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>wxDelegate</code></th>
+						<td><p>an object confirms to WXApiDelegate protocol</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>description</code></th>
+						<td><p>wechat description</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if appId and wxDelegate are invalid.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxLeapPay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/startPayment:completion:" title="startPayment:completion:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/startPayment:completion:">+&nbsp;startPayment:completion:</a></code>
 </h3>
@@ -355,6 +427,65 @@ So, it is important for you to call this method in <code>application:openURL:sou
 
 			
 
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxLeapPay.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleWXPayResponse:" title="handleWXPayResponse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleWXPayResponse:">+&nbsp;handleWXPayResponse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handle the wechat pay response to complete the wechat pay process.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)handleWXPayResponse:(PayResp *)<em>response</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>response</code></th>
+						<td><p>The <code>PayResp</code> received in WXApiDelegate method &lsquo;onResp:&rsquo;.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method result in a <a href="../Classes/MLUser.html"><code>MLUser</code></a> logging in or creating. And then the block in method <a href="#//api/name/startPayment:completion:"><code>startPayment:completion:</code></a> will be excuted on main thread.
+You should call this method when receive the <code>SendAuthResp</code> response.</p>
+			</div>
 			
 
 			
@@ -515,7 +646,7 @@ This api can be used to verify the authenticity of a transaction by check <code>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-12</p>
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-01-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
