@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLFacebookUtils Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/facebookLoginManager">+ facebookLoginManager</option>
+		
+		<option value="//api/name/initializeFacebookWithApplicationLaunchOptions:">+ initializeFacebookWithApplicationLaunchOptions:</option>
+		
+		<option value="//api/name/isLinkedWithUser:">+ isLinkedWithUser:</option>
+		
+		<option value="//api/name/linkUserInBackground:withAccessToken:block:">+ linkUserInBackground:withAccessToken:block:</option>
+		
+		<option value="//api/name/linkUserInBackground:withPublishPermissions:block:">+ linkUserInBackground:withPublishPermissions:block:</option>
+		
+		<option value="//api/name/linkUserInBackground:withReadPermissions:block:">+ linkUserInBackground:withReadPermissions:block:</option>
+		
+		<option value="//api/name/logInInBackgroundWithAccessToken:block:">+ logInInBackgroundWithAccessToken:block:</option>
+		
+		<option value="//api/name/logInInBackgroundWithPublishPermissions:block:">+ logInInBackgroundWithPublishPermissions:block:</option>
+		
+		<option value="//api/name/logInInBackgroundWithReadPermissions:block:">+ logInInBackgroundWithReadPermissions:block:</option>
+		
+		<option value="//api/name/unlinkUserInBackground:block:">+ unlinkUserInBackground:block:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLFacebookUtils Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLFacebookUtils.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>MLFacebookUtils</code> class provides utility functions for using Facebook authentication with <a href="../Classes/MLUser.html">MLUser</a>s.</p><div class="warning"><p><strong>Warning:</strong> This class supports official Facebook iOS SDK v4.0+ and is available only on iOS.</p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Interacting With Facebook" name="task_Interacting With Facebook"></a>
+						<h2 class="task-title">Interacting With Facebook</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initializeFacebookWithApplicationLaunchOptions:" title="initializeFacebookWithApplicationLaunchOptions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initializeFacebookWithApplicationLaunchOptions:">+&nbsp;initializeFacebookWithApplicationLaunchOptions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes <a href="../Classes/MaxLeap.html">MaxLeap</a> Facebook Utils.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)initializeFacebookWithApplicationLaunchOptions:(nullable NSDictionary *)<em>launchOptions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>launchOptions</code></th>
+						<td><p>The launchOptions as passed to [UIApplicationDelegate application:didFinishLaunchingWithOptions:].</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>You must provide your Facebook application ID as the value for FacebookAppID in your bundle&rsquo;s plist file
+as described here: <a href="https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/">https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/</a></p><div class="warning"><p><strong>Warning:</strong> You must invoke this in order to use the Facebook functionality in <a href="../Classes/MaxLeap.html">MaxLeap</a>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/facebookLoginManager" title="facebookLoginManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/facebookLoginManager">+&nbsp;facebookLoginManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><code>FBSDKLoginManager</code> provides methods for configuring login behavior, default audience
+and managing Facebook Access Token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable FBSDKLoginManager *)facebookLoginManager</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>FBSDKLoginManager</code> that is used by <code>MLFacebookUtils</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Logging In" name="task_Logging In"></a>
+						<h2 class="task-title">Logging In</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/logInInBackgroundWithReadPermissions:block:" title="logInInBackgroundWithReadPermissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInInBackgroundWithReadPermissions:block:">+&nbsp;logInInBackgroundWithReadPermissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> logs in a user using Facebook with read permissions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInInBackgroundWithReadPermissions:(NSArray ML_GENERIC ( NSString *) *)<em>permissions</em> block:(nullable MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>Array of read permissions to use.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the log in completes.
+It should have the following signature: <code>^(</code>MLUser<code> *user, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate the user,
+and then automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInInBackgroundWithPublishPermissions:block:" title="logInInBackgroundWithPublishPermissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInInBackgroundWithPublishPermissions:block:">+&nbsp;logInInBackgroundWithPublishPermissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> logs in a user using Facebook with publish permissions.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInInBackgroundWithPublishPermissions:(NSArray ML_GENERIC ( NSString *) *)<em>permissions</em> block:(nullable MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>Array of publish permissions to use.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the log in completes.
+It should have the following signature: <code>^(</code>MLUser<code> *user, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate the user,
+and then automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logInInBackgroundWithAccessToken:block:" title="logInInBackgroundWithAccessToken:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logInInBackgroundWithAccessToken:block:">+&nbsp;logInInBackgroundWithAccessToken:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> logs in a user using given Facebook Acess Token.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)logInInBackgroundWithAccessToken:(FBSDKAccessToken *)<em>accessToken</em> block:(nullable MLUserResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>An instance of <code>FBSDKAccessToken</code> to use when logging in.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the log in completes.
+It should have the following signature: <code>^(</code>MLUser<code> *user, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate the user,
+and then automatically logs in (or creates, in the case where it is a new user) a <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Linking Users" name="task_Linking Users"></a>
+						<h2 class="task-title">Linking Users</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/linkUserInBackground:withReadPermissions:block:" title="linkUserInBackground:withReadPermissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:withReadPermissions:block:">+&nbsp;linkUserInBackground:withReadPermissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> links Facebook with read permissions to an existing <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUserInBackground:(MLUser *)<em>user</em> withReadPermissions:(NSArray ML_GENERIC ( NSString *) *)<em>permissions</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>Array of read permissions to use.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the linking completes.
+It should have the following signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/MLUser.html">MLUser</a>.
+It will also save any unsaved changes that were made to the <code>user</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUserInBackground:withPublishPermissions:block:" title="linkUserInBackground:withPublishPermissions:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:withPublishPermissions:block:">+&nbsp;linkUserInBackground:withPublishPermissions:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> links Facebook with publish permissions to an existing <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUserInBackground:(MLUser *)<em>user</em> withPublishPermissions:(NSArray ML_GENERIC ( NSString *) *)<em>permissions</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>permissions</code></th>
+						<td><p>Array of publish permissions to use.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the linking completes.
+It should have the following signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/MLUser.html">MLUser</a>.
+It will also save any unsaved changes that were made to the <code>user</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkUserInBackground:withAccessToken:block:" title="linkUserInBackground:withAccessToken:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkUserInBackground:withAccessToken:block:">+&nbsp;linkUserInBackground:withAccessToken:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><em>Asynchronously</em> links Facebook Access Token to an existing <a href="../Classes/MLUser.html">MLUser</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)linkUserInBackground:(MLUser *)<em>user</em> withAccessToken:(FBSDKAccessToken *)<em>accessToken</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to link to Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>An instance of <code>FBSDKAccessToken</code> to use.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute when the linking completes.
+It should have the following signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method delegates to the Facebook SDK to authenticate
+the user, and then automatically links the account to the <a href="../Classes/MLUser.html">MLUser</a>.
+It will also save any unsaved changes that were made to the <code>user</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unlinkUserInBackground:block:" title="unlinkUserInBackground:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unlinkUserInBackground:block:">+&nbsp;unlinkUserInBackground:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unlinks the <a href="../Classes/MLUser.html">MLUser</a> from a Facebook account <em>asynchronously</em>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)unlinkUserInBackground:(MLUser *)<em>user</em> block:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to unlink from Facebook.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block to execute.
+It should have the following argument signature: <code>^(BOOL succeeded, NSError *error)</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting Linked State" name="task_Getting Linked State"></a>
+						<h2 class="task-title">Getting Linked State</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isLinkedWithUser:" title="isLinkedWithUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLinkedWithUser:">+&nbsp;isLinkedWithUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the user has their account linked to Facebook.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)isLinkedWithUser:(nullable MLUser *)<em>user</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>user</code></th>
+						<td><p>User to check for a facebook link. The user must be logged in on this device.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>YES</code> if the user has their account linked to Facebook, otherwise <code>NO</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFacebookUtils.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-03-28</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
