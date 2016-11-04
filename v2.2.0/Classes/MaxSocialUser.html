@@ -1,0 +1,2956 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MaxSocialUser Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap-SDK~iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/userId">userId</option>
+		
+		<option value="//api/name/username">username</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/loginWithPhoneNumber:smsCode:completion:">+ loginWithPhoneNumber:smsCode:completion:</option>
+		
+		<option value="//api/name/loginWithUsername:password:completion:">+ loginWithUsername:password:completion:</option>
+		
+		<option value="//api/name/queryWhetherUser:isFollowingUser:resultBlock:">+ queryWhetherUser:isFollowingUser:resultBlock:</option>
+		
+		<option value="//api/name/registerWithUsername:password:completion:">+ registerWithUsername:password:completion:</option>
+		
+		<option value="//api/name/requestSmscodeWithPhoneNumber:completion:">+ requestSmscodeWithPhoneNumber:completion:</option>
+		
+		<option value="//api/name/userWithId:">+ userWithId:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/batchUpdateComments:block:">- batchUpdateComments:block:</option>
+		
+		<option value="//api/name/blockUser:completion:">- blockUser:completion:</option>
+		
+		<option value="//api/name/createCommentForShuoShuo:withContent:block:">- createCommentForShuoShuo:withContent:block:</option>
+		
+		<option value="//api/name/createOrUpdateComment:block:">- createOrUpdateComment:block:</option>
+		
+		<option value="//api/name/deleteCommentWithId:block:">- deleteCommentWithId:block:</option>
+		
+		<option value="//api/name/deleteLocationInfoWithObjectId:block:">- deleteLocationInfoWithObjectId:block:</option>
+		
+		<option value="//api/name/deleteRelationInfoWithId:block:">- deleteRelationInfoWithId:block:</option>
+		
+		<option value="//api/name/deleteShuoShuoWithId:block:">- deleteShuoShuoWithId:block:</option>
+		
+		<option value="//api/name/downloadImageWithName:ofShuoShuo:progress:completion:">- downloadImageWithName:ofShuoShuo:progress:completion:</option>
+		
+		<option value="//api/name/fetchLocationInfoWithObjectId:block:">- fetchLocationInfoWithObjectId:block:</option>
+		
+		<option value="//api/name/fetchShuoShuoWithId:block:">- fetchShuoShuoWithId:block:</option>
+		
+		<option value="//api/name/followUser:block:">- followUser:block:</option>
+		
+		<option value="//api/name/followUser:reverse:block:">- followUser:reverse:block:</option>
+		
+		<option value="//api/name/getCommentOfShuoshuo:withQuery:block:">- getCommentOfShuoshuo:withQuery:block:</option>
+		
+		<option value="//api/name/getCommentWithId:block:">- getCommentWithId:block:</option>
+		
+		<option value="//api/name/getFolloweesWithQuery:block:">- getFolloweesWithQuery:block:</option>
+		
+		<option value="//api/name/getFollowersWithQuery:block:">- getFollowersWithQuery:block:</option>
+		
+		<option value="//api/name/getImageNamesOfShuoShuo:block:">- getImageNamesOfShuoShuo:block:</option>
+		
+		<option value="//api/name/getLatestShuoShuoInFriendCycleWithQuery:block:">- getLatestShuoShuoInFriendCycleWithQuery:block:</option>
+		
+		<option value="//api/name/getLatestShuoShuoInSquareWithQuery:block:">- getLatestShuoShuoInSquareWithQuery:block:</option>
+		
+		<option value="//api/name/getLocationInfoWithBlock:">- getLocationInfoWithBlock:</option>
+		
+		<option value="//api/name/getRelationInfoWithId:block:">- getRelationInfoWithId:block:</option>
+		
+		<option value="//api/name/getRelationInfoWithUserId:followerId:block:">- getRelationInfoWithUserId:followerId:block:</option>
+		
+		<option value="//api/name/getShuoShuoNearLocation:distance:block:">- getShuoShuoNearLocation:distance:block:</option>
+		
+		<option value="//api/name/getShuoShuoWithQuery:block:">- getShuoShuoWithQuery:block:</option>
+		
+		<option value="//api/name/getUnreadCommentWithBlock:">- getUnreadCommentWithBlock:</option>
+		
+		<option value="//api/name/getUnreadCommentWithParams:block:">- getUnreadCommentWithParams:block:</option>
+		
+		<option value="//api/name/likeShuoShuo:block:">- likeShuoShuo:block:</option>
+		
+		<option value="//api/name/markCommentAsRead:completion:">- markCommentAsRead:completion:</option>
+		
+		<option value="//api/name/postShuoShuo:toSquare:block:">- postShuoShuo:toSquare:block:</option>
+		
+		<option value="//api/name/queryUserNearLocation:distance:block:">- queryUserNearLocation:distance:block:</option>
+		
+		<option value="//api/name/unblockUser:completion:">- unblockUser:completion:</option>
+		
+		<option value="//api/name/unfollowUser:block:">- unfollowUser:block:</option>
+		
+		<option value="//api/name/updateLocation:block:">- updateLocation:block:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MaxSocialUser Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MaxSocialUser.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <code>MaxSocialUser</code> represents a user persisted to the MaxSocial.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Properties" name="task_Properties"></a>
+						<h2 class="task-title">Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/userId" title="userId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userId">&nbsp;&nbsp;userId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An opaque value that represents a user in your user system.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *userId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="method-title"><code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The username of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) NSString *username</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Constructors" name="task_Constructors"></a>
+						<h2 class="task-title">Constructors</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/userWithId:" title="userWithId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userWithId:">+&nbsp;userWithId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a <code>MaxSocialUser</code> object using the opaque user id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)userWithId:(NSString *)<em>userId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The opaque user id that represents a user in your user system.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new <code>MaxSocialUser</code> object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Relation" name="task_Relation"></a>
+						<h2 class="task-title">Relation</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/followUser:block:" title="followUser:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/followUser:block:">&ndash;&nbsp;followUser:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Follow the user which has an id <a href="#//api/name/userId"><code>userId</code></a>. The method calls <a href="#//api/name/followUser:reverse:block:"><code>followUser:reverse:block:</code></a> by passing reverse <code>NO</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)followUser:(NSString *)<em>userId</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The followee&rsquo;s id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the follow operation result. The block should have the following signatures: (NSArray&lt;NSDictionary<em>> </em>array, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The user following relation was maintained by a <a href="../Classes/MaxSocialRelationInfo.html"><code>MaxSocialRelationInfo</code></a> object. Following a user will create or update the relation object. And the callback will return the following results:</p>
+
+<p>@code
+// on creation
+[
+{&ldquo;createdAt&rdquo;:&ldquo;2016-04-08T03:06:19.911Z&rdquo;,&ldquo;objectId&rdquo;:&ldquo;5707202b238c8f00018dd535&rdquo;},
+{}
+]</p>
+
+<p>// on updating
+[
+{&ldquo;updateResult&rdquo;:1},
+{}
+]
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/followUser:reverse:block:" title="followUser:reverse:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/followUser:reverse:block:">&ndash;&nbsp;followUser:reverse:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Follow the user which has an id <a href="#//api/name/userId"><code>userId</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)followUser:(NSString *)<em>userId</em> reverse:(BOOL)<em>reverse</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The followee&rsquo;s id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reverse</code></th>
+						<td><p>Whether follow each other.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the follow operation result. The block should have the following signatures: (NSArray&lt;NSDictionary<em>> </em>array, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The user following relation was maintained by a <a href="../Classes/MaxSocialRelationInfo.html"><code>MaxSocialRelationInfo</code></a> object. Following a user will create or update the relation object. And the callback will return the following results:</p>
+
+<p>@code
+// on creation
+[
+{&ldquo;createdAt&rdquo;:&ldquo;2016-04-08T03:06:19.911Z&rdquo;,&ldquo;objectId&rdquo;:&ldquo;5707202b238c8f00018dd535&rdquo;},
+// if reverse is NO, the following dictionary will be empty
+{&ldquo;createdAt&rdquo;:&ldquo;2016-04-08T03:06:19.911Z&rdquo;,&ldquo;objectId&rdquo;:&ldquo;5707202b238c8f00018dd535&rdquo;}
+]</p>
+
+<p>// on updating
+[
+{&ldquo;updateResult&rdquo;:1},
+{&ldquo;updateResult&rdquo;:1}
+]
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unfollowUser:block:" title="unfollowUser:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unfollowUser:block:">&ndash;&nbsp;unfollowUser:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unfollow the user which has an id <a href="#//api/name/userId"><code>userId</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unfollowUser:(NSString *)<em>userId</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The followee&rsquo;s id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the unfollow operation result. The block should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/blockUser:completion:" title="blockUser:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/blockUser:completion:">&ndash;&nbsp;blockUser:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Block a follower. Followers were blocked cannot read your shuoshuos.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)blockUser:(NSString *)<em>userId</em> completion:(MLBooleanResultBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The follower&rsquo;s id to block.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to return the operation result. The block should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unblockUser:completion:" title="unblockUser:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unblockUser:completion:">&ndash;&nbsp;unblockUser:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Unblock a follower. Followers were blocked cannot read your shuoshuos.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unblockUser:(NSString *)<em>userId</em> completion:(MLBooleanResultBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The follower&rsquo;s id to unblock.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to return the operation result. The block should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRelationInfoWithId:block:" title="getRelationInfoWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRelationInfoWithId:block:">&ndash;&nbsp;getRelationInfoWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the <a href="../Classes/MaxSocialRelationInfo.html"><code>MaxSocialRelationInfo</code></a> object with <code>objectId</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRelationInfoWithId:(NSString *)<em>objectId</em> block:(MLSRelationResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>The relation info object&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (<a href="../Classes/MaxSocialRelationInfo.html">MaxSocialRelationInfo</a> <em>relation, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRelationInfoWithUserId:followerId:block:" title="getRelationInfoWithUserId:followerId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRelationInfoWithUserId:followerId:block:">&ndash;&nbsp;getRelationInfoWithUserId:followerId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the <a href="../Classes/MaxSocialRelationInfo.html"><code>MaxSocialRelationInfo</code></a> object by <a href="#//api/name/userId">userId</a> and followerId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getRelationInfoWithUserId:(NSString *)<em>userId</em> followerId:(NSString *)<em>followerId</em> block:(MLSRelationResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The followee id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>followerId</code></th>
+						<td><p>The follower id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (<a href="../Classes/MaxSocialRelationInfo.html">MaxSocialRelationInfo</a> <em>relation, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteRelationInfoWithId:block:" title="deleteRelationInfoWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteRelationInfoWithId:block:">&ndash;&nbsp;deleteRelationInfoWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the relation info object by id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteRelationInfoWithId:(NSString *)<em>relationInfoId</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>relationInfoId</code></th>
+						<td><p>The relation info object&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryWhetherUser:isFollowingUser:resultBlock:" title="queryWhetherUser:isFollowingUser:resultBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryWhetherUser:isFollowingUser:resultBlock:">+&nbsp;queryWhetherUser:isFollowingUser:resultBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query the relation between <a href="#//api/name/userId"><code>userId</code></a> and <code>anotherUserId</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)queryWhetherUser:(NSString *)<em>userId</em> isFollowingUser:(NSString *)<em>anotherUserId</em> resultBlock:(void ( ^ ) ( BOOL isFollowing , BOOL isReverse , NSError *error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The follower id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>anotherUserId</code></th>
+						<td><p>The followee id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block has 3 parameters: isFollowing indicates whether the <a href="#//api/name/userId"><code>userId</code></a> is following the <code>anotherUserId</code>; isReverse indicates whether the <code>anotherUserId</code> is following <a href="#//api/name/userId"><code>userId</code></a> at the same time; error represents any error occured while performing the request.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFolloweesWithQuery:block:" title="getFolloweesWithQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFolloweesWithQuery:block:">&ndash;&nbsp;getFolloweesWithQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the followee list with a query object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFolloweesWithQuery:(MaxSocialQuery *)<em>query</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>A max social query object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSArray<a href="../Classes/MaxSocialRelationInfo.html">MaxSocialRelationInfo</a><em>> </em>followees, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFollowersWithQuery:block:" title="getFollowersWithQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFollowersWithQuery:block:">&ndash;&nbsp;getFollowersWithQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the follower list with a query object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFollowersWithQuery:(MaxSocialQuery *)<em>query</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>A max social query object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSArray<a href="../Classes/MaxSocialRelationInfo.html">MaxSocialRelationInfo</a><em>> </em>followers, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Shuoshuo" name="task_Shuoshuo"></a>
+						<h2 class="task-title">Shuoshuo</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/postShuoShuo:toSquare:block:" title="postShuoShuo:toSquare:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/postShuoShuo:toSquare:block:">&ndash;&nbsp;postShuoShuo:toSquare:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Post a new shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)postShuoShuo:(MaxSocialShuoShuo *)<em>shuoshuo</em> toSquare:(BOOL)<em>toSquare</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoshuo</code></th>
+						<td><p>The shuoshuo object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>toSquare</code></th>
+						<td><p>Whether post the shuoshuo to the square. If <code>NO</code>, the shuoshuo will not appear in shuoshuo square.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getShuoShuoWithQuery:block:" title="getShuoShuoWithQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getShuoShuoWithQuery:block:">&ndash;&nbsp;getShuoShuoWithQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>List user&rsquo;s own shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getShuoShuoWithQuery:(MaxSocialQuery *)<em>query</em> block:(MLDictionaryResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>The query object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSDictionary <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The result have the following structure:
+@code
+{
+&ldquo;shuoshuos&rdquo;:[
+&hellip;
+<a href="../Classes/MaxSocialShuoShuo.html">MaxSocialShuoShuo</a> objects>
+&hellip;
+],
+&ldquo;comments&rdquo; :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+&ldquo;zans&rdquo;     :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+}
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLatestShuoShuoInSquareWithQuery:block:" title="getLatestShuoShuoInSquareWithQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLatestShuoShuoInSquareWithQuery:block:">&ndash;&nbsp;getLatestShuoShuoInSquareWithQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query shuoshuos posted in the square.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLatestShuoShuoInSquareWithQuery:(MaxSocialQuery *)<em>query</em> block:(MLDictionaryResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>The query object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSDictionary <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The result have the following structure:
+@code
+{
+&ldquo;shuoshuos&rdquo;:[
+&hellip;
+<a href="../Classes/MaxSocialShuoShuo.html">MaxSocialShuoShuo</a> objects>
+&hellip;
+],
+&ldquo;comments&rdquo; :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+&ldquo;zans&rdquo;     :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+}
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLatestShuoShuoInFriendCycleWithQuery:block:" title="getLatestShuoShuoInFriendCycleWithQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLatestShuoShuoInFriendCycleWithQuery:block:">&ndash;&nbsp;getLatestShuoShuoInFriendCycleWithQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query shuoshuos posted by user&rsquo;s followees.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLatestShuoShuoInFriendCycleWithQuery:(MaxSocialQuery *)<em>query</em> block:(MLDictionaryResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>The query object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSDictionary <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The result have the following structure:
+@code
+{
+&ldquo;shuoshuos&rdquo;:[
+&hellip;
+<a href="../Classes/MaxSocialShuoShuo.html">MaxSocialShuoShuo</a> objects>
+&hellip;
+],
+&ldquo;comments&rdquo; :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+&ldquo;zans&rdquo;     :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+}
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getShuoShuoNearLocation:distance:block:" title="getShuoShuoNearLocation:distance:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getShuoShuoNearLocation:distance:block:">&ndash;&nbsp;getShuoShuoNearLocation:distance:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Query shuoshuos near the location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getShuoShuoNearLocation:(MaxSocialLocation *)<em>location</em> distance:(int64_t)<em>distance</em> block:(MLDictionaryResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>location</code></th>
+						<td><p>The reference location</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>distance</code></th>
+						<td><p>Max distance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSDictionary <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The result have the following structure:
+@code
+{
+&ldquo;shuoshuos&rdquo;:[
+&hellip;
+<a href="../Classes/MaxSocialShuoShuo.html">MaxSocialShuoShuo</a> objects>
+&hellip;
+],
+&ldquo;comments&rdquo; :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+&ldquo;zans&rdquo;     :{
+&ldquo;shuoshuoId&rdquo; : [
+&hellip;
+<MaxSocialComment objects>
+&hellip;
+],
+&hellip;
+},
+}
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getImageNamesOfShuoShuo:block:" title="getImageNamesOfShuoShuo:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getImageNamesOfShuoShuo:block:">&ndash;&nbsp;getImageNamesOfShuoShuo:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve the image names of a shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getImageNamesOfShuoShuo:(NSString *)<em>shuoId</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuo&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. The block should have the following signatures: (NSArray&lt;NSString<em>> </em>imageNames, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The image name is an opaque string that represents an image. It&rsquo;s NOT a URI. The image can be download by calling <a href="#//api/name/downloadImageWithName:ofShuoShuo:progress:completion:"><code>downloadImageWithName:ofShuoShuo:progress:completion:</code></a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadImageWithName:ofShuoShuo:progress:completion:" title="downloadImageWithName:ofShuoShuo:progress:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadImageWithName:ofShuoShuo:progress:completion:">&ndash;&nbsp;downloadImageWithName:ofShuoShuo:progress:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Download the shuoshuo image by the given opaque image name.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadImageWithName:(NSString *)<em>imageName</em> ofShuoShuo:(NSString *)<em>shuoId</em> progress:(nullable MLProgressBlock)<em>progress</em> completion:(nullable MLStringResultBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>imageName</code></th>
+						<td><p>An opaque string that represents an shuoshuo image.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuo objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progress</code></th>
+						<td><p>A block to notify the image downloading progress. It should have the following signatures: (int percentDone)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to return the result. It should have the following signatures: (NSString <em>downloadedImagePath, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchShuoShuoWithId:block:" title="fetchShuoShuoWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchShuoShuoWithId:block:">&ndash;&nbsp;fetchShuoShuoWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve a shuoshuo object with shuoshuoId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchShuoShuoWithId:(NSString *)<em>shuoId</em> block:(MLSShuoShuoResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuo&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the shuoshuo object. It should have the following signatures: (<a href="../Classes/MaxSocialShuoShuo.html">MaxSocialShuoShuo</a> <em>status, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteShuoShuoWithId:block:" title="deleteShuoShuoWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteShuoShuoWithId:block:">&ndash;&nbsp;deleteShuoShuoWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete a shuoshuo by shuoshuoId. This also remove all photos related to the shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteShuoShuoWithId:(NSString *)<em>shuoId</em> block:(void ( ^ ) ( BOOL shuoDelete , BOOL photosDelete , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuo&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. It should have the following signatures: (BOOL shuoDelete, BOOL photosDelete, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Location" name="task_Location"></a>
+						<h2 class="task-title">Location</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/updateLocation:block:" title="updateLocation:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateLocation:block:">&ndash;&nbsp;updateLocation:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update the user&rsquo;s location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateLocation:(MaxSocialLocation *)<em>location</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>location</code></th>
+						<td><p>A object that represents the user&rsquo;s location.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryUserNearLocation:distance:block:" title="queryUserNearLocation:distance:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryUserNearLocation:distance:block:">&ndash;&nbsp;queryUserNearLocation:distance:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Find people near <code>location</code>. UserIds can be retrieved by reading <code>locationInfo.</code>userId<code></code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryUserNearLocation:(MaxSocialLocation *)<em>location</em> distance:(int64_t)<em>distance</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>location</code></th>
+						<td><p>A location</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>distance</code></th>
+						<td><p>The radius</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (NSArray&lt;MaxSocialLocationInfo<em>> </em>locationInfoList, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocationInfoWithBlock:" title="getLocationInfoWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocationInfoWithBlock:">&ndash;&nbsp;getLocationInfoWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve user&rsquo;s location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLocationInfoWithBlock:(MLSLocationResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialLocationInfo <em>locationInfo, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchLocationInfoWithObjectId:block:" title="fetchLocationInfoWithObjectId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchLocationInfoWithObjectId:block:">&ndash;&nbsp;fetchLocationInfoWithObjectId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve location info object by objectId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchLocationInfoWithObjectId:(NSString *)<em>objectId</em> block:(MLSLocationResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>The location info objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialLocationInfo <em>locationInfo, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteLocationInfoWithObjectId:block:" title="deleteLocationInfoWithObjectId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteLocationInfoWithObjectId:block:">&ndash;&nbsp;deleteLocationInfoWithObjectId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete location info object by objectId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteLocationInfoWithObjectId:(NSString *)<em>objectId</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>The lcoation info objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The callback. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Comment" name="task_Comment"></a>
+						<h2 class="task-title">Comment</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createOrUpdateComment:block:" title="createOrUpdateComment:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createOrUpdateComment:block:">&ndash;&nbsp;createOrUpdateComment:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a comment for a shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createOrUpdateComment:(NSDictionary *)<em>params</em> block:(MLSCommentResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>The comment parameters.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialComment <em>comment, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The valid params structure is:
+@code
+{
+&ldquo;objectId&rdquo;: &ldquo;8941b1863330920045fea193&rdquo;, // if objectId is set, excute update operation
+&ldquo;userId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;shuoId&rdquo;: &ldquo;570613bf6b85b3436e86aa43&rdquo;,
+&ldquo;content&rdquo;: &ldquo;just test!&rdquo;,
+&ldquo;zan&rdquo;: false,  // if true, the content MUST NOT be set!
+&ldquo;read&rdquo;: false,
+&ldquo;friendCircle&rdquo;: true,
+&ldquo;toUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;hostUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;
+}
+@endcode</p>
+
+<p>CREATE A TEXT COMMEMT:
+@code
+{
+&ldquo;userId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;shuoId&rdquo;: &ldquo;570613bf6b85b3436e86aa43&rdquo;,
+&ldquo;content&rdquo;: &ldquo;just test!&rdquo;,
+&ldquo;zan&rdquo;: false,                           // if true, the content must not be set!
+&ldquo;friendCircle&rdquo;: true,
+&ldquo;toUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;hostUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;
+}
+@endcode</p>
+
+<p>CREATE A ZAN:
+@code
+{
+&ldquo;userId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;shuoId&rdquo;: &ldquo;570613bf6b85b3436e86aa43&rdquo;,
+&ldquo;zan&rdquo;: true,
+&ldquo;friendCircle&rdquo;: true,
+&ldquo;toUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;,
+&ldquo;hostUserId&rdquo;: &ldquo;5641b10b3330920001f1f7a4&rdquo;
+}
+@endcode</p>
+
+<p>MARK A COMMENT AS READ:
+@code
+{
+&ldquo;objectId&rdquo;: &ldquo;8941b1863330920045fea193&rdquo;,
+&ldquo;read&rdquo;: false
+}
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/batchUpdateComments:block:" title="batchUpdateComments:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/batchUpdateComments:block:">&ndash;&nbsp;batchUpdateComments:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Batch update comments</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)batchUpdateComments:(NSArray&lt;NSDictionary*&gt; *)<em>updates</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>updates</code></th>
+						<td><p>The parameters</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The callback. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The valid stucture of params is:
+@code
+[
+{
+&ldquo;objectId&rdquo; : comment.objectId,
+&ldquo;read&rdquo;     : true
+},
+&hellip;
+]
+@endcode</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createCommentForShuoShuo:withContent:block:" title="createCommentForShuoShuo:withContent:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createCommentForShuoShuo:withContent:block:">&ndash;&nbsp;createCommentForShuoShuo:withContent:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a comment for a shuoshuo.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createCommentForShuoShuo:(NSString *)<em>shuoId</em> withContent:(NSString *)<em>text</em> block:(MLSCommentResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The id of shuoshuo to comment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>text</code></th>
+						<td><p>The content of the comment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialComment <em>comment, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markCommentAsRead:completion:" title="markCommentAsRead:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markCommentAsRead:completion:">&ndash;&nbsp;markCommentAsRead:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark a comment as read.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)markCommentAsRead:(NSString *)<em>commentId</em> completion:(void ( ^ ) ( BOOL updated , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commentId</code></th>
+						<td><p>The id of comment.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (BOOL updated, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/likeShuoShuo:block:" title="likeShuoShuo:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/likeShuoShuo:block:">&ndash;&nbsp;likeShuoShuo:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Like a shuoshuo. This operation creates a comment without content.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)likeShuoShuo:(NSString *)<em>shuoId</em> block:(MLSCommentResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuoId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialComment <em>comment, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCommentWithId:block:" title="getCommentWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCommentWithId:block:">&ndash;&nbsp;getCommentWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve a comment object with commentId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCommentWithId:(NSString *)<em>commentId</em> block:(MLSCommentResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commentId</code></th>
+						<td><p>The comment&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (MaxSocialComment <em>comment, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteCommentWithId:block:" title="deleteCommentWithId:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteCommentWithId:block:">&ndash;&nbsp;deleteCommentWithId:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete a comment by comentId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteCommentWithId:(NSString *)<em>commentId</em> block:(MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>commentId</code></th>
+						<td><p>The comment&rsquo;s objectId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result callback. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCommentOfShuoshuo:withQuery:block:" title="getCommentOfShuoshuo:withQuery:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCommentOfShuoshuo:withQuery:block:">&ndash;&nbsp;getCommentOfShuoshuo:withQuery:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve comments of a shuoshuo. The query object can be used to restrict the number of comments to return, and the order of comments.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCommentOfShuoshuo:(NSString *)<em>shuoId</em> withQuery:(MaxSocialQuery *)<em>query</em> block:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shuoId</code></th>
+						<td><p>The shuoshuoId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>query</code></th>
+						<td><p>A query object</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result block. It should have the following signatures: (NSArray&lt;MaxSocialComment<em>> </em>comments, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadCommentWithBlock:" title="getUnreadCommentWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadCommentWithBlock:">&ndash;&nbsp;getUnreadCommentWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve user&rsquo;s unread comments.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUnreadCommentWithBlock:(MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result block. It should have the following signatures: (NSArray&lt;MaxSocialComment<em>> </em>comments, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnreadCommentWithParams:block:" title="getUnreadCommentWithParams:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnreadCommentWithParams:block:">&ndash;&nbsp;getUnreadCommentWithParams:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieve user&rsquo;s unread comments.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUnreadCommentWithParams:(NSDictionary *)<em>params</em> block:(MLDictionaryResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>The filter parameters, <a href="#//api/name/userId">userId</a>(default is self.<a href="#//api/name/userId">userId</a>), toUserId, hostUserId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The result block. It should have the following signatures: (NSDictionary <em>results, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerWithUsername:password:completion:" title="registerWithUsername:password:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerWithUsername:password:completion:">+&nbsp;registerWithUsername:password:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Register a new user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerWithUsername:(NSString *)<em>username</em> password:(NSString *)<em>password</em> completion:(MLIdResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>The new user&rsquo;s <a href="#//api/name/username">username</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the registration result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginWithUsername:password:completion:" title="loginWithUsername:password:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginWithUsername:password:completion:">+&nbsp;loginWithUsername:password:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Login with <a href="#//api/name/username">username</a> and password.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loginWithUsername:(NSString *)<em>username</em> password:(NSString *)<em>password</em> completion:(MLIdResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>The <a href="#//api/name/username">username</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the login result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSmscodeWithPhoneNumber:completion:" title="requestSmscodeWithPhoneNumber:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSmscodeWithPhoneNumber:completion:">+&nbsp;requestSmscodeWithPhoneNumber:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Request a smscode which can be used to login.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)requestSmscodeWithPhoneNumber:(NSString *)<em>phoneNumber</em> completion:(MLIdResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phoneNumber</code></th>
+						<td><p>A phone number</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result: whether the smsCode send successully or not.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginWithPhoneNumber:smsCode:completion:" title="loginWithPhoneNumber:smsCode:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginWithPhoneNumber:smsCode:completion:">+&nbsp;loginWithPhoneNumber:smsCode:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Login with a phone number and the sms code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)loginWithPhoneNumber:(NSString *)<em>phoneNumber</em> smsCode:(NSString *)<em>smsCode</em> completion:(MLIdResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phoneNumber</code></th>
+						<td><p>A phone number</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>smsCode</code></th>
+						<td><p>The smsCode</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the login result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MaxSocialUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-11-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

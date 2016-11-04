@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLIMPassenger Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap-SDK~iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/pid">pid</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/createOrUpdatePassengerWithAttributes:completion:">+ createOrUpdatePassengerWithAttributes:completion:</option>
+		
+		<option value="//api/name/passengerWithId:">+ passengerWithId:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/countHistoryMessagesWithUser:afterTime:block:">- countHistoryMessagesWithUser:afterTime:block:</option>
+		
+		<option value="//api/name/fetchWithCompletion:">- fetchWithCompletion:</option>
+		
+		<option value="//api/name/getHistoryMessagesWithUser:beforeTime:limit:completion:">- getHistoryMessagesWithUser:beforeTime:limit:completion:</option>
+		
+		<option value="//api/name/updatePassengerAttributes:completion:">- updatePassengerAttributes:completion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLIMPassenger Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/MLIMRuntimeObject.html">MLIMRuntimeObject</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLIMPassenger.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A MLIMPassenger object represent a passenger.</p>
+
+<p>A passenger can have some custom attributes. You can access them using
+<code>[passenger objectForKey:@"attrname"]</code> or <code>passenger[@"attrname"]</code> syntax.</p>
+
+<p>You can also create a subclass that inherits from MLIMPassenger, defining
+some dynamic property to access the attributes. A simple example:</p>
+
+<p>@code
+@interface MyPassenger : MLIMPassenger
+@property (nonatomic) int age;
+@end</p>
+
+<p>@implementation MYPassenger
+// !!!IMPORTANT!!! The property <code>age</code> must be declared as dynamic property.
+@dynamic age;</p>
+
+<p>@end</p>
+
+<p>// Then, you can get the passenger&rsquo;s age by using <code>passenger.age</code> syntax.
+@endcode</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/pid" title="pid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pid">&nbsp;&nbsp;pid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The passenger id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *pid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/passengerWithId:" title="passengerWithId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passengerWithId:">+&nbsp;passengerWithId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create an instance of MLIMPassenger with passenger id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)passengerWithId:(NSString *)<em>pid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pid</code></th>
+						<td><p>the passenger id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A new instance of MLIMPassenger.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createOrUpdatePassengerWithAttributes:completion:" title="createOrUpdatePassengerWithAttributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createOrUpdatePassengerWithAttributes:completion:">+&nbsp;createOrUpdatePassengerWithAttributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create or update a passenger with attributes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createOrUpdatePassengerWithAttributes:(NSDictionary&lt;NSDictionary*,id&gt; *)<em>attributes</em> completion:(void ( ^ ) ( MLIMPassenger *_Nullable passenger , NSError *_Nullable error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>The custom passenger attributes.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to notify the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>If passenge with the id <code>attributes[@"id"]</code> exsits, update it,
+otherwise, create a new passenger.</p>
+
+<p>The api always create new passenger if attributes[@&ldquo;id&rdquo;] is empty.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatePassengerAttributes:completion:" title="updatePassengerAttributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatePassengerAttributes:completion:">&ndash;&nbsp;updatePassengerAttributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update passenger attributes. The keys that are not in the attributes will not be updated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updatePassengerAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attributes</em> completion:(MLIMBooleanResultBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attributes</code></th>
+						<td><p>Attributes to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to notify the resutl.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithCompletion:" title="fetchWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithCompletion:">&ndash;&nbsp;fetchWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the passenger&rsquo;s attributes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithCompletion:(MLIMBooleanResultBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to notify the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHistoryMessagesWithUser:beforeTime:limit:completion:" title="getHistoryMessagesWithUser:beforeTime:limit:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHistoryMessagesWithUser:beforeTime:limit:completion:">&ndash;&nbsp;getHistoryMessagesWithUser:beforeTime:limit:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get history messages chat with user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getHistoryMessagesWithUser:(NSString *)<em>userId</em> beforeTime:(NSTimeInterval)<em>ts</em> limit:(int)<em>limit</em> completion:(void ( ^ ) ( NSArray&lt;MLIMMessage*&gt; *_Nullable messages , NSError *_Nullable error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The talking target</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ts</code></th>
+						<td><p>The timestamp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>Limit for message count return</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>A block to notify the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/countHistoryMessagesWithUser:afterTime:block:" title="countHistoryMessagesWithUser:afterTime:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/countHistoryMessagesWithUser:afterTime:block:">&ndash;&nbsp;countHistoryMessagesWithUser:afterTime:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the count of history messages with a user from <code>ts</code> to now.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)countHistoryMessagesWithUser:(NSString *)<em>userId</em> afterTime:(NSTimeInterval)<em>ts</em> block:(MLIMIntegerResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userId</code></th>
+						<td><p>The user Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ts</code></th>
+						<td><p>The start time. Default is <code>0</code>, meaning all messages, NOT RECOMMENDED.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block will be executed on the main queue. It should have the following signatures: (NSInteger number, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMPassenger.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-11-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

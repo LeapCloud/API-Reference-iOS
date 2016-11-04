@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLIMUser Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap-SDK~iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/attributes">attributes</option>
+		
+		<option value="//api/name/friends">friends</option>
+		
+		<option value="//api/name/groups">groups</option>
+		
+		<option value="//api/name/online">online</option>
+		
+		<option value="//api/name/phoneNumber">phoneNumber</option>
+		
+		<option value="//api/name/rooms">rooms</option>
+		
+		<option value="//api/name/sessionCount">sessionCount</option>
+		
+		<option value="//api/name/uid">uid</option>
+		
+		<option value="//api/name/updatedAt">updatedAt</option>
+		
+		<option value="//api/name/username">username</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/userWithId:">+ userWithId:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addFriend:completion:">- addFriend:completion:</option>
+		
+		<option value="//api/name/addFriendWithUser:completion:">- addFriendWithUser:completion:</option>
+		
+		<option value="//api/name/batchAddFriends:completion:">- batchAddFriends:completion:</option>
+		
+		<option value="//api/name/deleteAttributesForGroup:completion:">- deleteAttributesForGroup:completion:</option>
+		
+		<option value="//api/name/deleteAttributesForRoom:completion:">- deleteAttributesForRoom:completion:</option>
+		
+		<option value="//api/name/deleteAttributesWithCompletion:">- deleteAttributesWithCompletion:</option>
+		
+		<option value="//api/name/deleteFriend:completion:">- deleteFriend:completion:</option>
+		
+		<option value="//api/name/fetchAttributesForGroup:completion:">- fetchAttributesForGroup:completion:</option>
+		
+		<option value="//api/name/fetchAttributesForRoom:completion:">- fetchAttributesForRoom:completion:</option>
+		
+		<option value="//api/name/fetchAttributesWithCompletion:">- fetchAttributesWithCompletion:</option>
+		
+		<option value="//api/name/fetchFriendsWithDetail:completion:">- fetchFriendsWithDetail:completion:</option>
+		
+		<option value="//api/name/fetchGroupsWithDetail:completion:">- fetchGroupsWithDetail:completion:</option>
+		
+		<option value="//api/name/fetchRoomsWithDetail:completion:">- fetchRoomsWithDetail:completion:</option>
+		
+		<option value="//api/name/fetchStrangersWithDetail:params:completion:">- fetchStrangersWithDetail:params:completion:</option>
+		
+		<option value="//api/name/fetchWithCompletion:">- fetchWithCompletion:</option>
+		
+		<option value="//api/name/getAttributeForKey:completion:">- getAttributeForKey:completion:</option>
+		
+		<option value="//api/name/getFriendInfo:completion:">- getFriendInfo:completion:</option>
+		
+		<option value="//api/name/getInfoOfStranger:completion:">- getInfoOfStranger:completion:</option>
+		
+		<option value="//api/name/getLatestChatsWithFriend:beforeTimestamp:limit:block:">- getLatestChatsWithFriend:beforeTimestamp:limit:block:</option>
+		
+		<option value="//api/name/getLatestChatsWithStranger:before:limit:block:">- getLatestChatsWithStranger:before:limit:block:</option>
+		
+		<option value="//api/name/hideChatsWithFriend:before:block:">- hideChatsWithFriend:before:block:</option>
+		
+		<option value="//api/name/hideChatsWithStranger:before:block:">- hideChatsWithStranger:before:block:</option>
+		
+		<option value="//api/name/replaceAttributes:completion:">- replaceAttributes:completion:</option>
+		
+		<option value="//api/name/replaceAttributes:forGroup:completion:">- replaceAttributes:forGroup:completion:</option>
+		
+		<option value="//api/name/replaceAttributes:forRoom:completion:">- replaceAttributes:forRoom:completion:</option>
+		
+		<option value="//api/name/updateAttributes:completion:">- updateAttributes:completion:</option>
+		
+		<option value="//api/name/updateAttributes:forGroup:completion:">- updateAttributes:forGroup:completion:</option>
+		
+		<option value="//api/name/updateAttributes:forRoom:completion:">- updateAttributes:forRoom:completion:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLIMUser Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/MLIMRuntimeObject.html">MLIMRuntimeObject</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLIMUser.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A representation of current logged in user.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/uid" title="uid"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uid">&nbsp;&nbsp;uid</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *uid</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/username" title="username"></a>
+	<h3 class="method-title"><code><a href="#//api/name/username">&nbsp;&nbsp;username</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The username.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) NSString *username</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/phoneNumber" title="phoneNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/phoneNumber">&nbsp;&nbsp;phoneNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The user&rsquo;s phone number.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) NSString *phoneNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updatedAt" title="updatedAt"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updatedAt">&nbsp;&nbsp;updatedAt</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The last time user updated</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, readonly) NSDate *updatedAt</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionCount" title="sessionCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionCount">&nbsp;&nbsp;sessionCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The number of user logged in client.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger sessionCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attributes" title="attributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attributes">&nbsp;&nbsp;attributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Custom attributes for the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, nonatomic, strong) NSDictionary *attributes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/online" title="online"></a>
+	<h3 class="method-title"><code><a href="#//api/name/online">&nbsp;&nbsp;online</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Online status of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL online</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/friends" title="friends"></a>
+	<h3 class="method-title"><code><a href="#//api/name/friends">&nbsp;&nbsp;friends</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Friends of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;MLIMRelationInfo*&gt; *friends</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/groups" title="groups"></a>
+	<h3 class="method-title"><code><a href="#//api/name/groups">&nbsp;&nbsp;groups</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Groups of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;MLIMGroup*&gt; *groups</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/rooms" title="rooms"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rooms">&nbsp;&nbsp;rooms</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Rooms of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray&lt;MLIMRoom*&gt; *rooms</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userWithId:" title="userWithId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userWithId:">+&nbsp;userWithId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create user object with userID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)userWithId:(NSString *)<em>uid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The userId, the userId should match <code>[a-zA-Z0-9_\-]+</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a MLIMUser object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchWithCompletion:" title="fetchWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchWithCompletion:">&ndash;&nbsp;fetchWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the user data, including user&rsquo;s friendIds, groupIds and roomIds.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchWithCompletion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchFriendsWithDetail:completion:" title="fetchFriendsWithDetail:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchFriendsWithDetail:completion:">&ndash;&nbsp;fetchFriendsWithDetail:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch friend info. The friend&rsquo;s info will be saved in user.<a href="#//api/name/friends">friends</a> property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchFriendsWithDetail:(BOOL)<em>detail</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detail</code></th>
+						<td><p>Should get friend detail info or not. If <code>NO</code>, only friend ID will be retured.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addFriendWithUser:completion:" title="addFriendWithUser:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addFriendWithUser:completion:">&ndash;&nbsp;addFriendWithUser:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a friend with userId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addFriendWithUser:(NSString *)<em>uid</em> completion:(void ( ^ ) ( NSDictionary *result , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The friend&rsquo;s <a href="#//api/name/uid">uid</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addFriend:completion:" title="addFriend:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addFriend:completion:">&ndash;&nbsp;addFriend:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a friend with userId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addFriend:(NSString *)<em>uid</em> completion:(void ( ^ ) ( NSDictionary *result , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The friend&rsquo;s <a href="#//api/name/uid">uid</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/batchAddFriends:completion:" title="batchAddFriends:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/batchAddFriends:completion:">&ndash;&nbsp;batchAddFriends:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Batch add <a href="#//api/name/friends">friends</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)batchAddFriends:(NSArray *)<em>ids</em> completion:(void ( ^ ) ( NSArray&lt;NSDictionary*&gt; *result , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ids</code></th>
+						<td><p>friend user ids</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFriendInfo:completion:" title="getFriendInfo:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFriendInfo:completion:">&ndash;&nbsp;getFriendInfo:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the friend detail with friend <a href="#//api/name/uid">uid</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFriendInfo:(NSString *)<em>friendId</em> completion:(void ( ^ ) ( MLIMRelationInfo *, NSError *_Nullable ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>friendId</code></th>
+						<td><p>The friend userId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteFriend:completion:" title="deleteFriend:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteFriend:completion:">&ndash;&nbsp;deleteFriend:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove a friend with friend&rsquo;s userId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteFriend:(NSString *)<em>uid</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The friend&rsquo;s userId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLatestChatsWithFriend:beforeTimestamp:limit:block:" title="getLatestChatsWithFriend:beforeTimestamp:limit:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLatestChatsWithFriend:beforeTimestamp:limit:block:">&ndash;&nbsp;getLatestChatsWithFriend:beforeTimestamp:limit:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the latest messages chat with friend.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLatestChatsWithFriend:(NSString *)<em>uid</em> beforeTimestamp:(NSTimeInterval)<em>ts</em> limit:(int)<em>limit</em> block:(void ( ^ ) ( NSArray&lt;MLIMMessage*&gt; *_Nullable messages , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The friend userId.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ts</code></th>
+						<td><p>The time</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>The limit on number of messages to return.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after reuqest completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideChatsWithFriend:before:block:" title="hideChatsWithFriend:before:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideChatsWithFriend:before:block:">&ndash;&nbsp;hideChatsWithFriend:before:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hide the messages before a timestamp</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideChatsWithFriend:(NSString *)<em>uid</em> before:(NSTimeInterval)<em>before</em> block:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The friend id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>before</code></th>
+						<td><p>before this timestamp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block will be executed on the main queue. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchStrangersWithDetail:params:completion:" title="fetchStrangersWithDetail:params:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchStrangersWithDetail:params:completion:">&ndash;&nbsp;fetchStrangersWithDetail:params:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch stranger list that the user have contacted with. The list can be retrieved from user.strangers property later.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchStrangersWithDetail:(BOOL)<em>detail</em> params:(nullable NSDictionary&lt;NSString*,NSString*&gt; *)<em>params</em> completion:(void ( ^ ) ( NSArray&lt;MLIMRelationInfo*&gt; *_Nullable result , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detail</code></th>
+						<td><p>If true, stranger detail information will be returned, otherwise only stranger id will be re</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>params</code></th>
+						<td><p>{&ldquo;limit&rdquo;:&ldquo;10&rdquo;, &ldquo;skip&rdquo;:&ldquo;0&rdquo;, &ldquo;ids&rdquo;:&ldquo;id1,id2,id3&rdquo;}</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after reuqest completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getInfoOfStranger:completion:" title="getInfoOfStranger:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getInfoOfStranger:completion:">&ndash;&nbsp;getInfoOfStranger:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the detail stranger info</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getInfoOfStranger:(NSString *)<em>strangerId</em> completion:(void ( ^ ) ( MLIMRelationInfo *, NSError *_Nullable ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>strangerId</code></th>
+						<td><p>the stranger userId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after reuqest completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLatestChatsWithStranger:before:limit:block:" title="getLatestChatsWithStranger:before:limit:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLatestChatsWithStranger:before:limit:block:">&ndash;&nbsp;getLatestChatsWithStranger:before:limit:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the latest message chat with the stranger</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLatestChatsWithStranger:(NSString *)<em>uid</em> before:(NSTimeInterval)<em>ts</em> limit:(int)<em>limit</em> block:(void ( ^ ) ( NSArray&lt;MLIMMessage*&gt; *_Nullable messages , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>the stranger userId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ts</code></th>
+						<td><p>the time</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>the limit on number of messages to return</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after reuqest completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideChatsWithStranger:before:block:" title="hideChatsWithStranger:before:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideChatsWithStranger:before:block:">&ndash;&nbsp;hideChatsWithStranger:before:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Hide the history messages with a stranger.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideChatsWithStranger:(NSString *)<em>uid</em> before:(NSTimeInterval)<em>before</em> block:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>The stranger id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>before</code></th>
+						<td><p>hide messages before this timestamp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block will be executed on the main queue. It should have the following signatures: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchGroupsWithDetail:completion:" title="fetchGroupsWithDetail:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchGroupsWithDetail:completion:">&ndash;&nbsp;fetchGroupsWithDetail:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch user&rsquo;s group list. The group&rsquo;s info will be saved in user.<a href="#//api/name/groups">groups</a> property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchGroupsWithDetail:(BOOL)<em>detail</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detail</code></th>
+						<td><p>Should get group detail info or not. If <code>NO</code>, only group ID will be retured.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchRoomsWithDetail:completion:" title="fetchRoomsWithDetail:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchRoomsWithDetail:completion:">&ndash;&nbsp;fetchRoomsWithDetail:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch room info. The room&rsquo;s info will be saved in user.<a href="#//api/name/rooms">rooms</a> property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchRoomsWithDetail:(BOOL)<em>detail</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detail</code></th>
+						<td><p>Should get room detail info or not. If <code>NO</code>, only room ID will be retured.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to be executed after request completion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateAttributes:completion:" title="updateAttributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateAttributes:completion:">&ndash;&nbsp;updateAttributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update user <a href="#//api/name/attributes">attributes</a>. The <a href="#//api/name/attributes">attributes</a> keys must be a string, the values can be any json serializable type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>the custom user <a href="#//api/name/attributes">attributes</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replaceAttributes:completion:" title="replaceAttributes:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replaceAttributes:completion:">&ndash;&nbsp;replaceAttributes:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Replace whole <a href="#//api/name/attributes">attributes</a> with the new one. The <a href="#//api/name/attributes">attributes</a> keys must be a string, the values can be any json serializable type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)replaceAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>the custom user <a href="#//api/name/attributes">attributes</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchAttributesWithCompletion:" title="fetchAttributesWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAttributesWithCompletion:">&ndash;&nbsp;fetchAttributesWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch the <a href="#//api/name/attributes">attributes</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAttributesWithCompletion:(void ( ^ ) ( NSDictionary *_Nullable attrs , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAttributeForKey:completion:" title="getAttributeForKey:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAttributeForKey:completion:">&ndash;&nbsp;getAttributeForKey:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get one attribute with key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAttributeForKey:(NSString *)<em>key</em> completion:(void ( ^ ) ( id _Nullable value , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>attribute name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAttributesWithCompletion:" title="deleteAttributesWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAttributesWithCompletion:">&ndash;&nbsp;deleteAttributesWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the whole <a href="#//api/name/attributes">attributes</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAttributesWithCompletion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchAttributesForGroup:completion:" title="fetchAttributesForGroup:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAttributesForGroup:completion:">&ndash;&nbsp;fetchAttributesForGroup:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch user <a href="#//api/name/attributes">attributes</a> defined for a group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAttributesForGroup:(NSString *)<em>groupId</em> completion:(void ( ^ ) ( NSDictionary *_Nullable attrs , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>The group id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result. It should have the following argument signature:(NSDictionary *, NSError)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateAttributes:forGroup:completion:" title="updateAttributes:forGroup:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateAttributes:forGroup:completion:">&ndash;&nbsp;updateAttributes:forGroup:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update some user <a href="#//api/name/attributes">attributes</a> in a group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> forGroup:(NSString *)<em>groupId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>The new <a href="#//api/name/attributes">attributes</a>, <a href="#//api/name/attributes">attributes</a> not in the dictionary will not be changed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>The group id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replaceAttributes:forGroup:completion:" title="replaceAttributes:forGroup:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replaceAttributes:forGroup:completion:">&ndash;&nbsp;replaceAttributes:forGroup:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Replace user <a href="#//api/name/attributes">attributes</a> for a group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)replaceAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> forGroup:(NSString *)<em>groupId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>The new <a href="#//api/name/attributes">attributes</a> to replace the old one.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>The group id.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAttributesForGroup:completion:" title="deleteAttributesForGroup:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAttributesForGroup:completion:">&ndash;&nbsp;deleteAttributesForGroup:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete all the user <a href="#//api/name/attributes">attributes</a> for a group.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAttributesForGroup:(NSString *)<em>groupId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupId</code></th>
+						<td><p>The group id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchAttributesForRoom:completion:" title="fetchAttributesForRoom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchAttributesForRoom:completion:">&ndash;&nbsp;fetchAttributesForRoom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Fetch user <a href="#//api/name/attributes">attributes</a> defined for a room.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)fetchAttributesForRoom:(NSString *)<em>roomId</em> completion:(void ( ^ ) ( NSDictionary *_Nullable attrs , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>The room id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateAttributes:forRoom:completion:" title="updateAttributes:forRoom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateAttributes:forRoom:completion:">&ndash;&nbsp;updateAttributes:forRoom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update some user <a href="#//api/name/attributes">attributes</a> in a room. The <a href="#//api/name/attributes">attributes</a> which are not in the new attrs dictionary will not be changed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> forRoom:(NSString *)<em>roomId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>The new <a href="#//api/name/attributes">attributes</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>The room id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replaceAttributes:forRoom:completion:" title="replaceAttributes:forRoom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replaceAttributes:forRoom:completion:">&ndash;&nbsp;replaceAttributes:forRoom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Replace user <a href="#//api/name/attributes">attributes</a> map for a room with the new one.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)replaceAttributes:(NSDictionary&lt;NSString*,id&gt; *)<em>attrs</em> forRoom:(NSString *)<em>roomId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>attrs</code></th>
+						<td><p>The new <a href="#//api/name/attributes">attributes</a> to replace the old one.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>The room id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAttributesForRoom:completion:" title="deleteAttributesForRoom:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAttributesForRoom:completion:">&ndash;&nbsp;deleteAttributesForRoom:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delete the user <a href="#//api/name/attributes">attributes</a> for a room</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteAttributesForRoom:(NSString *)<em>roomId</em> completion:(MLIMBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomId</code></th>
+						<td><p>The room id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block to return the result.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLIMUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-11-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

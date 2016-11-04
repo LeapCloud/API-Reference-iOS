@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLFile Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap-SDK~iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/isDataAvailable">isDataAvailable</option>
+		
+		<option value="//api/name/isDirty">isDirty</option>
+		
+		<option value="//api/name/name">name</option>
+		
+		<option value="//api/name/url">url</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/fileWithData:">+ fileWithData:</option>
+		
+		<option value="//api/name/fileWithName:contentsAtPath:">+ fileWithName:contentsAtPath:</option>
+		
+		<option value="//api/name/fileWithName:data:">+ fileWithName:data:</option>
+		
+		<option value="//api/name/fileWithUrl:">+ fileWithUrl:</option>
+		
+		<option value="//api/name/getAllInBackgroundWithBlock:">+ getAllInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/getFileInBackgroundWithName:block:">+ getFileInBackgroundWithName:block:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancel">- cancel</option>
+		
+		<option value="//api/name/getData:">- getData:</option>
+		
+		<option value="//api/name/getDataInBackgroundWithBlock:">- getDataInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/getDataInBackgroundWithBlock:progressBlock:">- getDataInBackgroundWithBlock:progressBlock:</option>
+		
+		<option value="//api/name/getDataStreamInBackgroundWithBlock:">- getDataStreamInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/getDataStreamInBackgroundWithBlock:progressBlock:">- getDataStreamInBackgroundWithBlock:progressBlock:</option>
+		
+		<option value="//api/name/saveInBackgroundWithBlock:">- saveInBackgroundWithBlock:</option>
+		
+		<option value="//api/name/saveInBackgroundWithBlock:progressBlock:">- saveInBackgroundWithBlock:progressBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLFile Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSSecureCoding</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLFile.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A file of binary data stored on the <a href="../Classes/MaxLeap.html">MaxLeap</a> servers. This can be a image, video, or anything else
+that an application needs to reference in a non-relational way.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Creating a MLFile" name="task_Creating a MLFile"></a>
+						<h2 class="task-title">Creating a MLFile</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fileWithData:" title="fileWithData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWithData:">+&nbsp;fileWithData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a file with given data. A <a href="#//api/name/name">name</a> will be assigned to it by the server.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)fileWithData:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The contents of the new MLFile.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A MLFile.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWithName:data:" title="fileWithName:data:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWithName:data:">+&nbsp;fileWithName:data:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a file with given data and <a href="#//api/name/name">name</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)fileWithName:(nullable NSString *)<em>name</em> data:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The <a href="#//api/name/name">name</a> of the new MLFile.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>The contents of hte new MLFile.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A MLFile.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWithName:contentsAtPath:" title="fileWithName:contentsAtPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWithName:contentsAtPath:">+&nbsp;fileWithName:contentsAtPath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a file with the contents of another file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)fileWithName:(nullable NSString *)<em>name</em> contentsAtPath:(NSString *)<em>path</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The <a href="#//api/name/name">name</a> of the new MLFile</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>The path to the file that will be uploaded to <a href="../Classes/MaxLeap.html">MaxLeap</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fileWithUrl:" title="fileWithUrl:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fileWithUrl:">+&nbsp;fileWithUrl:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create a file with <a href="#//api/name/url">url</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)fileWithUrl:(NSString *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The <a href="#//api/name/url">url</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A MLFile object.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The name of the file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, copy, nullable) NSString *name</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/url" title="url"></a>
+	<h3 class="method-title"><code><a href="#//api/name/url">&nbsp;&nbsp;url</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The url of the file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, copy, nullable) NSString *url</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDirty" title="isDirty"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDirty">&nbsp;&nbsp;isDirty</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the file has been uploaded for the first time.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isDirty</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDataAvailable" title="isDataAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDataAvailable">&nbsp;&nbsp;isDataAvailable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether the data is available in memory or needs to be downloaded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly) BOOL isDataAvailable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Storing Data with MaxLeap" name="task_Storing Data with MaxLeap"></a>
+						<h2 class="task-title">Storing Data with MaxLeap</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:" title="saveInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveInBackgroundWithBlock:">&ndash;&nbsp;saveInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves the file asynchronously and executes the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:progressBlock:" title="saveInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;saveInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Saves the file asynchronously and executes the given resultBlock. Executes the progressBlock periodically with the percent
+progress. progressBlock will get called with 100 before resultBlock is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveInBackgroundWithBlock:(nullable MLBooleanResultBlock)<em>block</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (BOOL succeeded, NSError *error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>The block should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting Data from MaxLeap" name="task_Getting Data from MaxLeap"></a>
+						<h2 class="task-title">Getting Data from MaxLeap</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getData:" title="getData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getData:">&ndash;&nbsp;getData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Synchronously gets the data from cache if available or fetches its contents from the <a href="../Classes/MaxLeap.html">MaxLeap</a> servers. Sets an error if it occurs.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSData *)getData:(NSError *__nullable *__nullable)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>Pointer to an NSError that will be set if necessary.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The data of file. Returns nil if there was an error in fetching.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDataInBackgroundWithBlock:" title="getDataInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDataInBackgroundWithBlock:">&ndash;&nbsp;getDataInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously gets the data from cache if available or fetches its contents
+from the <a href="../Classes/MaxLeap.html">MaxLeap</a> servers. Executes the given block.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDataInBackgroundWithBlock:(nullable MLDataResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (NSData <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDataStreamInBackgroundWithBlock:" title="getDataStreamInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDataStreamInBackgroundWithBlock:">&ndash;&nbsp;getDataStreamInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is like <a href="#//api/name/getDataInBackgroundWithBlock:">getDataInBackgroundWithBlock:</a> but avoids ever holding the
+entire MLFile&rsquo;s contents in memory at once. This can help applications with
+many large MLFiles avoid memory warnings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDataStreamInBackgroundWithBlock:(nullable MLDataStreamResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block should have the following argument signature: (NSInputStream <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDataInBackgroundWithBlock:progressBlock:" title="getDataInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDataInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;getDataInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Asynchronously gets the data from cache if available or fetches its contents
+from the <a href="../Classes/MaxLeap.html">MaxLeap</a> servers. Executes the resultBlock upon
+completion or error. Executes the progressBlock periodically with the percent progress. progressBlock will get called with 100 before resultBlock is called.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDataInBackgroundWithBlock:(nullable MLDataResultBlock)<em>resultBlock</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultBlock</code></th>
+						<td><p>The block should have the following argument signature: (NSData <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>The block should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDataStreamInBackgroundWithBlock:progressBlock:" title="getDataStreamInBackgroundWithBlock:progressBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDataStreamInBackgroundWithBlock:progressBlock:">&ndash;&nbsp;getDataStreamInBackgroundWithBlock:progressBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This method is like <a href="#//api/name/getDataInBackgroundWithBlock:progressBlock:">getDataInBackgroundWithBlock:progressBlock:</a> but avoids ever
+holding the entire MLFile&rsquo;s contents in memory at once. This can help
+applications with many large MLFiles avoid memory warnings.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDataStreamInBackgroundWithBlock:(nullable MLDataStreamResultBlock)<em>resultBlock</em> progressBlock:(nullable MLProgressBlock)<em>progressBlock</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resultBlock</code></th>
+						<td><p>The block should have the following argument signature: (NSInputStream <em>result, NSError </em>error)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressBlock</code></th>
+						<td><p>The block should have the following argument signature: (int percentDone)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Interrupting a Transfer" name="task_Interrupting a Transfer"></a>
+						<h2 class="task-title">Interrupting a Transfer</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cancel" title="cancel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancel">&ndash;&nbsp;cancel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancels the current request (whether upload or download of file data).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Other Methods" name="task_Other Methods"></a>
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getFileInBackgroundWithName:block:" title="getFileInBackgroundWithName:block:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFileInBackgroundWithName:block:">+&nbsp;getFileInBackgroundWithName:block:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get file with specified <a href="#//api/name/name">name</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getFileInBackgroundWithName:(NSString *)<em>name</em> block:(nullable MLFileResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>The <a href="#//api/name/name">name</a> of a file.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The block will execute on main thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllInBackgroundWithBlock:" title="getAllInBackgroundWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllInBackgroundWithBlock:">+&nbsp;getAllInBackgroundWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get all files uploaded by current user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getAllInBackgroundWithBlock:(nullable MLArrayResultBlock)<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>The callback, will be executed on main thread. The block should have the following argument signature: (NSArray<MLFile *> <em>files, NSError </em>error).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLFile.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-11-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

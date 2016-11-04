@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLPayResultCode Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MaxLeap-SDK~iOS </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MaxLeap</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLPayResultCode Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>MLPayConstants.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">MLPayResultCode</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p><a href="../Classes/MaxLeap.html">MaxLeap</a> pay result codes</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, MLPayResultCode ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPaySuccess</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorUnknown</a> = -1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorUserCancel</a> = -2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorSentFail</a> = -3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorUnsupport</a> = -4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorAppInvalid</a> = 1,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorPayFactorNotSet</a> = 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorChannelInvalid</a> = 3,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorMissParam</a> = 4,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorParamInvalid</a> = 5,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorCertFileError</a> = 6,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorChannelError</a> = 7,<br>
+                            
+                            &nbsp;&nbsp; <a href="">MLPayErrorRuntimeError</a> = 14,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="MLPaySuccess"></a><code>MLPaySuccess</code></dt>
+<dd>
+
+
+<p>0: pay succeed</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorUnknown"></a><code>MLPayErrorUnknown</code></dt>
+<dd>
+
+
+<p>-1: Unknown error, no information avaiable.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorUserCancel"></a><code>MLPayErrorUserCancel</code></dt>
+<dd>
+
+
+<p>-2: Transaction was cancelled by user</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorSentFail"></a><code>MLPayErrorSentFail</code></dt>
+<dd>
+
+
+<p>-3: Transaction failed, parameter invalid or connection failed</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorUnsupport"></a><code>MLPayErrorUnsupport</code></dt>
+<dd>
+
+
+<p>-4: Channel or environment not supported</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorAppInvalid"></a><code>MLPayErrorAppInvalid</code></dt>
+<dd>
+
+
+<p>1: App invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorPayFactorNotSet"></a><code>MLPayErrorPayFactorNotSet</code></dt>
+<dd>
+
+
+<p>2: Pay factor not set on cloud servers</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorChannelInvalid"></a><code>MLPayErrorChannelInvalid</code></dt>
+<dd>
+
+
+<p>3: Channel invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorMissParam"></a><code>MLPayErrorMissParam</code></dt>
+<dd>
+
+
+<p>4: Some parameters missing</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorParamInvalid"></a><code>MLPayErrorParamInvalid</code></dt>
+<dd>
+
+
+<p>5: Parameter is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorCertFileError"></a><code>MLPayErrorCertFileError</code></dt>
+<dd>
+
+
+<p>6: Certificate file error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorChannelError"></a><code>MLPayErrorChannelError</code></dt>
+<dd>
+
+
+<p>7: Channel error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="MLPayErrorRuntimeError"></a><code>MLPayErrorRuntimeError</code></dt>
+<dd>
+
+
+<p>14: Server runtime error, please contact technical support engineer</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">MLPayConstants.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">MLPayConstants.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 MaxLeap. All rights reserved. Updated: 2016-11-04</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
